@@ -2,6 +2,7 @@
 :root {
   --txtdark: #DCF0F1;
   --cyan: #50F7CF;
+  --cyangreen: #23F8C5;
   --cyanblue: #00eeff;
   --cyandark: #00eeff;
   --cyandark2: #144162;
@@ -24,4 +25,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.bgGradient {
+  background: linear-gradient(to right, var(--cyangreen) -15%, var(--cyandark2) 90%);
 }
