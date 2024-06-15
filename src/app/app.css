@@ -1,7 +1,10 @@
 /* Define the custom colors as CSS variables */
 :root {
   --txtdark: #DCF0F1;
+  --cyan: #50F7CF;
   --cyanblue: #00eeff;
+  --cyandark: #00eeff;
+  --cyandark2: #144162;
 }
 
 /* Text gradient styles */
@@ -9,6 +12,15 @@
   font-size: 2.25rem; 
   font-weight: 700;
   background: linear-gradient(to right, var(--cyanblue) 1%, var(--txtdark) 25%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bigGradient {
+  font-size: 3.5rem; 
+  font-weight: 900;
+  background: linear-gradient(to right, var(--cyanblue) 1%, var(--cyandark2) 70%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
