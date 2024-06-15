@@ -11,6 +11,7 @@ module.exports = {
     colors: {
       highlight: '#59e1ff',
       cyan: '#50F7CF',
+      cyanblue: '#00eeff',
       cyanmid: '#23F8C5',
       cyandark: '#142254',
       bgdark: '#071115',
