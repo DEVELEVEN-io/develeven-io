@@ -20,7 +20,7 @@
 
 .bigGradient {
   font-size: 3.5rem; 
-  font-weight: 900;
+  font-weight: 700;
   background: linear-gradient(to right, var(--cyanblue) 1%, var(--cyandark2) 70%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -28,5 +28,16 @@
 }
 
 .bgGradient {
-  background: linear-gradient(to right, var(--cyangreen) -15%, var(--cyandark2) 90%);
+  background: linear-gradient(to right, var(--cyangreen) -15%, var(--cyandark2) 70%);
+}
+
+.gradientAnim {
+  background: linear-gradient(to right, var(--cyangreen) -15%, var(--cyandark2) 70%);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.gradientAnim:hover {
+  background: linear-gradient(to left, var(--cyandark2) -30%, var(--cyangreen) 140%);
+  transition: all 0.3s ease-in-out;
 }

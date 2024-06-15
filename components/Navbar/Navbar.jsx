@@ -1,5 +1,3 @@
-// components/Navbar/Navbar.jsx
-
 import { images } from "../../constants";
 import Image from 'next/image';
 
