@@ -104,6 +104,7 @@ button.active {
 }
 
 .memberCard {
+  overflow: hidden;
   position: relative;
   cursor: pointer;
 }
