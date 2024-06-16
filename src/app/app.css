@@ -126,7 +126,7 @@ button.active {
 }
 
 .memberInfo {
-  background-color: rgba(0, 39, 38, 0.26);
+  background-color: rgba(0, 0, 0, 0.26);
   box-shadow: 0 0 15px 5px rgba(0, 39, 38, 0.2);
   opacity: 1;
   position: absolute;
