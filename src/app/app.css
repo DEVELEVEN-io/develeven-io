@@ -9,12 +9,13 @@
 }
 
 /* Text gradient styles */
+
 .text-gradient {
   font-size: 2.25rem; 
   font-weight: 700;
-  background: linear-gradient(to right, var(--cyanblue) 1%, var(--txtdark) 25%);
-  -webkit-background-clip: text;
-  background-clip: text;
+  background: linear-gradient(to right, var(--cyanblue) 1%, var(--txtdark) 25%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
   color: transparent;
 }
 
@@ -36,8 +37,57 @@
   transition: all 0.3s ease-in-out;
 }
 
-
 .gradientAnim:hover {
   background: linear-gradient(to left, var(--cyandark2) -30%, var(--cyangreen) 140%);
   transition: all 0.3s ease-in-out;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+}
+
+.gallery-items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* Three items per row */
+  gap: 1rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto; /* Adjusted to maintain aspect ratio */
+  object-fit: cover;
+  /* border-radius: 1rem; */
+  transition: transform 0.3s ease;
+  /* margin: 5px 10px 5px 10px; */
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* Scale effect on hover */
+}
+
+h2 {
+  font-size: 1rem; /* Adjusted font size for better readability */
+}
+
+.filter-container button {
+  margin-right: 1rem; /* Reduced margin for better spacing */
+  margin-bottom: 1rem; /* Reduced margin for better spacing */
+  min-width: 5rem;
+  padding: 0.5rem 1rem;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button.active {
+  background: linear-gradient(to left, var(--cyandark2) -30%, var(--cyangreen) 140%);
+  transition: background 0.3s ease-in-out;
+  border-radius: 2rem;
 }
