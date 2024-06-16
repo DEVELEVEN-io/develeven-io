@@ -36,13 +36,13 @@ const Navbar = () => {
 
           <ul className='nav-list flex items-center'>
             <li className='nav-link px-4 py-2'>
-              <Link to="work" activeClass="active" spy={true} smooth={true} offset={50} duration={500} className="text-txtdark">Work</Link>
+              <Link to="work" activeClass="active" spy={true} smooth={true} offset={-250} duration={500} className="text-txtdark">Work</Link>
             </li>
             <li className='nav-link px-4 py-2'>
-              <Link to="services" spy={true} smooth={true} offset={50} duration={500} className="text-txtdark">Services</Link>
+              <Link to="services" spy={true} smooth={true} offset={-350} duration={500} className="text-txtdark">Services</Link>
             </li>
             <li className='nav-link px-4 py-2'>
-              <Link to="team" spy={true} smooth={true} offset={50} duration={500} className="text-txtdark">Team</Link>
+              <Link to="team" spy={true} smooth={true} offset={-250} duration={500} className="text-txtdark">Team</Link>
             </li>
             <li className='nav-link px-4 py-2'>
               <Link to="testimonials" spy={true} smooth={true} offset={50} duration={500} className="text-txtdark">Testimonials</Link>
