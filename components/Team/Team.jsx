@@ -1,5 +1,6 @@
 import { images } from "../../constants";
 import Image from 'next/image';
+import { FaLinkedin, FaGithub, FaYoutube, FaGlobe } from 'react-icons/fa';
 const Team = () => {
   return (
     <section className="container flex flex-col justify-between mx-auto mt-14 w-full">
@@ -12,8 +13,17 @@ const Team = () => {
           <Image src={images.portrait_1_md} alt="Logo" width={300} height={300}/>
           <div className="memberGradient absolute inset-0 rounded-t-md rounded-l-md rounded-b-none" />
           <div className="memberInfo flex flex-col mx-auto">
-            <span className="memberName">Abid Al Wassie</span>
-            <span className="memberTitle text-highlight">Web Developer</span>
+            <span className="memberName my-2">Abid Al Wassie</span>
+            <span className="memberTitle text-highlight my-2">Web Developer</span>
+            <div className="memberDesc">
+              <p className="memberText">Abid Al Wassie is the senior developer of DevEleven-io. He is a full stack developer with 4+ years of experience. He is the creator of oneManDev. He has a long history with JavaScript and other technologies.</p>
+              <ul className="memberLinks flex">
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://abidalwassie.me" target="_blank"><FaGlobe /></a></li>
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://github.com/AbidAlWassie" target="_blank"><FaGithub /></a></li>
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://youtube.com/@oneManDev" target="_blank"><FaYoutube /></a></li>
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://www.linkedin.com/in/abidalwassie" target="_blank"><FaLinkedin /></a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -21,8 +31,17 @@ const Team = () => {
           <Image src={images.portrait_1_md} alt="Logo" width={300} height={300}/>
           <div className="memberGradient absolute inset-0 rounded-t-md rounded-l-md rounded-b-none" />
           <div className="memberInfo flex flex-col mx-auto">
-            <span className="memberName">Abid Al Wassie</span>
-            <span className="memberTitle text-highlight">Web Developer</span>
+            <span className="memberName my-2">Abid Al Wassie</span>
+            <span className="memberTitle text-highlight my-2">Web Developer</span>
+            <div className="memberDesc">
+              <p className="memberText">Abid Al Wassie is the senior developer of DevEleven-io. He is a full stack developer with 4+ years of experience. He is the creator of oneManDev. He has a long history with JavaScript and other technologies.</p>
+              <ul className="memberLinks flex">
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://abidalwassie.me" target="_blank"><FaGlobe /></a></li>
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://github.com/AbidAlWassie" target="_blank"><FaGithub /></a></li>
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://youtube.com/@oneManDev" target="_blank"><FaYoutube /></a></li>
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://www.linkedin.com/in/abidalwassie" target="_blank"><FaLinkedin /></a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -30,8 +49,17 @@ const Team = () => {
           <Image src={images.portrait_1_md} alt="Logo" width={300} height={300}/>
           <div className="memberGradient absolute inset-0 rounded-t-md rounded-l-md rounded-b-none" />
           <div className="memberInfo flex flex-col mx-auto">
-            <span className="memberName">Abid Al Wassie</span>
-            <span className="memberTitle text-highlight">Web Developer</span>
+            <span className="memberName my-2">Abid Al Wassie</span>
+            <span className="memberTitle text-highlight my-2">Web Developer</span>
+            <div className="memberDesc">
+              <p className="memberText">Abid Al Wassie is the senior developer of DevEleven-io. He is a full stack developer with 4+ years of experience. He is the creator of oneManDev. He has a long history with JavaScript and other technologies.</p>
+              <ul className="memberLinks flex">
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://abidalwassie.me" target="_blank"><FaGlobe /></a></li>
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://github.com/AbidAlWassie" target="_blank"><FaGithub /></a></li>
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://youtube.com/@oneManDev" target="_blank"><FaYoutube /></a></li>
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://www.linkedin.com/in/abidalwassie" target="_blank"><FaLinkedin /></a></li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -39,8 +67,17 @@ const Team = () => {
           <Image src={images.portrait_1_md} alt="Logo" width={300} height={300}/>
           <div className="memberGradient absolute inset-0 rounded-t-md rounded-l-md rounded-b-none" />
           <div className="memberInfo flex flex-col mx-auto">
-            <span className="memberName">Abid Al Wassie</span>
-            <span className="memberTitle text-highlight">Web Developer</span>
+            <span className="memberName my-2">Abid Al Wassie</span>
+            <span className="memberTitle text-highlight my-2">Web Developer</span>
+            <div className="memberDesc">
+              <p className="memberText">Abid Al Wassie is the senior developer of DevEleven-io. He is a full stack developer with 4+ years of experience. He is the creator of oneManDev. He has a long history with JavaScript and other technologies.</p>
+              <ul className="memberLinks flex">
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://abidalwassie.me" target="_blank"><FaGlobe /></a></li>
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://github.com/AbidAlWassie" target="_blank"><FaGithub /></a></li>
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://youtube.com/@oneManDev" target="_blank"><FaYoutube /></a></li>
+                <li className="text-4xl mx-auto mb-4 mt-8"><a href="https://www.linkedin.com/in/abidalwassie" target="_blank"><FaLinkedin /></a></li>
+              </ul>
+            </div>
           </div>
         </div>
         
