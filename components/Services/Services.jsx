@@ -2,7 +2,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <section className="container flex flex-col justify-between mx-auto mt-14 w-full">
+    <section id="services" className="container flex flex-col justify-between mx-auto mt-14 w-full">
       <h2 className="text-4xl font-bold text-gradient my-2">Our Top Services</h2>
       <p className="my-4">We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.</p>
 
