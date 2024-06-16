@@ -9,6 +9,95 @@
   --cyandark3: #00719e;
 }
 
+
+* {
+  margin: 0;
+  /* cursor: default; */
+}
+
+/* Navbar.module.css */
+.navbar {
+  position: relative;
+  z-index: 1000; 
+  transition: top 0.3s;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0e37477c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+
+.navbar.scrolled {
+  position: fixed;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  --tw-shadow: 0 0 10 0px rgba(0,0,0,.1);
+  --tw-shadow-colored: 0 0 10 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.navHolder {
+  width: 100%;
+}
+
+.brand-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  margin: 0 10px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  padding: 14px;
+  display: block;
+}
+
+.nav-link a:hover {
+  color: var(--cyanblue);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.nav-link a {
+  cursor: pointer !important;
+} 
+
+.nav-link a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px; /* Adjust as needed */
+}
+
+.nav-link a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px; /* Height of the gradient border */
+  background: linear-gradient(90deg, var(--cyanblue) 1%, var(--cyandark2) 100%); /* Gradient colors */
+}
+
+
+.btn {
+  width: 120px;
+}
+
 /* Text gradient styles */
 
 .text-gradient {
@@ -107,6 +196,7 @@ button.active {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .memberCard:hover .memberInfo {
