@@ -1,4 +1,4 @@
-"use client";  // This tells Next.js to treat this component as a client component
+"use client";
 
 import Gallery from "@/app/components/Gallery";
 import Filter from "@/app/components/Filter";
@@ -12,7 +12,7 @@ const Work = () => {
 
   return (
     <section className="container flex flex-col justify-between mx-auto mt-14 w-full text-center">
-      <h2 className="text-4xl font-bold my-2 text-gradient">Our Work</h2>
+      <h2 className="text-4xl font-bold my-2 textGradient2">Our Work</h2>
 
       <div className="row flex flex-col">
         <Filter

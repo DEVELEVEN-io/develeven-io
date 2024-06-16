@@ -19,6 +19,15 @@
   color: transparent;
 }
 
+.textGradient2 {
+  font-size: 2.25rem; 
+  font-weight: 700;
+  background: linear-gradient(to right, var(--cyanblue) 30%, var(--txtdark) 55%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent;
+}
+
 .bigGradient {
   font-size: 3.5rem; 
   font-weight: 700;
