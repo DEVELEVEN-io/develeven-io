@@ -18,22 +18,19 @@
 /* Navbar.module.css */
 .navbar {
   position: relative;
-  z-index: 1000; /* Ensure the navbar is above other content */
-  transition: top 0.3s; /* Smooth transition for top property */
+  z-index: 1000; 
+  transition: top 0.3s;
 }
 
 .navbar.sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow when sticky */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navHolder {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
 }
 
 .brand-logo img {
@@ -69,6 +66,10 @@
 
 .nav-link a.active {
   color: var(--cyan) !important;
+}
+
+.btn {
+  width: 120px;
 }
 
 /* Text gradient styles */

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { FaLinkedin, FaGithub, FaYoutube, FaGlobe } from 'react-icons/fa';
 const Team = () => {
   return (
-    <section id="team" className="container flex flex-col justify-between mx-auto mt-14 w-full">
+    <section className="container flex flex-col justify-between mx-auto mt-14 w-full">
       <h2 className="text-4xl font-bold text-gradient my-2">Our Team</h2>
       <p className="my-4">We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.</p>
 
@@ -13,8 +13,8 @@ const Team = () => {
           <Image src={images.portrait_1_md} alt="Logo" width={300} height={300}/>
           <div className="memberGradient absolute inset-0 rounded-t-md rounded-l-md rounded-b-none" />
           <div className="memberInfo flex flex-col mx-auto">
-            <span className="memberName my-2">Abid Al Wassie</span>
-            <span className="memberTitle text-highlight mt-0 mb-4">Web Developer</span>
+            <span className="memberName mb-1">Abid Al Wassie</span>
+            <span className="memberTitle text-highlight my-0">Web Developer</span>
             <div className="memberDesc">
               <p className="memberText">Abid Al Wassie is the senior developer of DevEleven-io. He is a full stack developer with 4+ years of experience. He is the creator of oneManDev. He has a long history with JavaScript and other technologies.</p>
               <ul className="memberLinks flex">
@@ -31,8 +31,8 @@ const Team = () => {
           <Image src={images.portrait_1_md} alt="Logo" width={300} height={300}/>
           <div className="memberGradient absolute inset-0 rounded-t-md rounded-l-md rounded-b-none" />
           <div className="memberInfo flex flex-col mx-auto">
-            <span className="memberName my-2">Abid Al Wassie</span>
-            <span className="memberTitle text-highlight mt-0 mb-4">Web Developer</span>
+          <span className="memberName mb-1">Abid Al Wassie</span>
+            <span className="memberTitle text-highlight my-0">Web Developer</span>
             <div className="memberDesc">
               <p className="memberText">Abid Al Wassie is the senior developer of DevEleven-io. He is a full stack developer with 4+ years of experience. He is the creator of oneManDev. He has a long history with JavaScript and other technologies.</p>
               <ul className="memberLinks flex">
@@ -49,8 +49,8 @@ const Team = () => {
           <Image src={images.portrait_1_md} alt="Logo" width={300} height={300}/>
           <div className="memberGradient absolute inset-0 rounded-t-md rounded-l-md rounded-b-none" />
           <div className="memberInfo flex flex-col mx-auto">
-            <span className="memberName my-2">Abid Al Wassie</span>
-            <span className="memberTitle text-highlight mt-0 mb-4">Web Developer</span>
+          <span className="memberName mb-1">Abid Al Wassie</span>
+            <span className="memberTitle text-highlight my-0">Web Developer</span>
             <div className="memberDesc">
               <p className="memberText">Abid Al Wassie is the senior developer of DevEleven-io. He is a full stack developer with 4+ years of experience. He is the creator of oneManDev. He has a long history with JavaScript and other technologies.</p>
               <ul className="memberLinks flex">
@@ -67,8 +67,8 @@ const Team = () => {
           <Image src={images.portrait_1_md} alt="Logo" width={300} height={300}/>
           <div className="memberGradient absolute inset-0 rounded-t-md rounded-l-md rounded-b-none" />
           <div className="memberInfo flex flex-col mx-auto">
-            <span className="memberName my-2">Abid Al Wassie</span>
-            <span className="memberTitle text-highlight mt-0 mb-4">Web Developer</span>
+          <span className="memberName mb-1">Abid Al Wassie</span>
+            <span className="memberTitle text-highlight my-0">Web Developer</span>
             <div className="memberDesc">
               <p className="memberText">Abid Al Wassie is the senior developer of DevEleven-io. He is a full stack developer with 4+ years of experience. He is the creator of oneManDev. He has a long history with JavaScript and other technologies.</p>
               <ul className="memberLinks flex">
