@@ -9,6 +9,69 @@
   --cyandark3: #00719e;
 }
 
+
+* {
+  margin: 0;
+  /* cursor: default; */
+}
+
+/* Navbar.module.css */
+.navbar {
+  position: relative;
+  z-index: 1000; 
+  transition: top 0.3s;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navHolder {
+  width: 100%;
+}
+
+.brand-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  margin: 0 10px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  padding: 14px;
+  display: block;
+}
+
+.nav-link a:hover {
+  color: var(--cyan);
+  transition: all 0.3s ease-in-out;
+}
+
+
+.nav-link a {
+  cursor: pointer !important;
+} 
+
+.nav-link a.active {
+  color: var(--cyan) !important;
+}
+
+.btn {
+  width: 120px;
+}
+
 /* Text gradient styles */
 
 .text-gradient {
@@ -107,6 +170,7 @@ button.active {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .memberCard:hover .memberInfo {

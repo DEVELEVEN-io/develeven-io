@@ -1,5 +1,5 @@
 // src/app/pages.js
-import { Header, Work, Services, Team, Navbar } from '../../components';
+import { Header, Work, Services, Team, Navbar, Footer } from '../../components';
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <Work />
       <Services />
       <Team />
+      <Footer />
     </div>
   );
 }
