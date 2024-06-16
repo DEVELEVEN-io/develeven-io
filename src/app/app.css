@@ -100,3 +100,34 @@ button.active {
   transition: background 0.3s ease-in-out;
   border-radius: 2rem;
 }
+
+.memberCard {
+  position: relative;
+}
+
+.memberCard img {
+  z-index: 2;
+}
+
+.memberInfo {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  z-index: 3;
+}
+
+.memberName {
+  font-size: 1.5rem;
+}
+
+.memberTitle {
+  font-size: 1.2rem;
+}
+
+.memberGradient {
+  background: radial-gradient(circle, var(--cyandark) 0%, var(--cyandark2) 100%);
+  z-index: 1;
+}
