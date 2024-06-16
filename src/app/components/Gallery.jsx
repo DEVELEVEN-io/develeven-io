@@ -9,7 +9,7 @@ const Gallery = ({ gallery }) => {
   }
 
   return (
-  <div className="bg-cyandark2 mx-4 pt-4 pb-0 px-4 rounded-lg">
+  <div className="bg-bglight mx-4 pt-4 pb-0 px-4 rounded-lg">
     <motion.div layout className="gallery-item">
       
 

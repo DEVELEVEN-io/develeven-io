@@ -74,6 +74,7 @@
   object-fit: cover;
   /* border-radius: 1rem; */
   transition: transform 0.3s ease;
+  transform: scale(1.01);
   /* margin: 5px 10px 5px 10px; */
 }
 
@@ -128,6 +129,6 @@ button.active {
 }
 
 .memberGradient {
-  background: radial-gradient(circle, var(--cyandark) 0%, var(--cyandark2) 100%);
+  background: radial-gradient(circle, var(--cyandark) -10%, var(--cyandark2) 100%);
   z-index: 1;
 }

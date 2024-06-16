@@ -18,6 +18,7 @@ module.exports = {
       cyandark: '#142254',
       cyandark2: '#144162',
       bgdark: '#071115',
+      bglight: '#0B1B22',
       txtdark: '#DCF0F1',
       ff: '#FFFFFF',
       zz: '#000000',
