@@ -42,6 +42,11 @@
   position: fixed;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background: #0e37477c;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -moz-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
   --tw-shadow: 0 0 10 0px rgba(0,0,0,.1);
   --tw-shadow-colored: 0 0 10 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -367,4 +372,21 @@ button.active {
 
 .submit-button:hover {
   /* background: linear-gradient(to right, #1e90ff, #00BFFF); */
+}
+
+
+@media (min-width: 576px) { 
+  
+}
+
+@media (min-width: 768px) { 
+  
+}
+
+@media (min-width: 992px) { 
+  
+}
+
+@media (min-width: 1200px) { 
+  
 }

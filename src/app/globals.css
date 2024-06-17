@@ -11,4 +11,122 @@
   .hireBtn {
     @apply ml-auto mr-0 bg-gradient-to-r to-cyandark from-cyanmid font-semibold h-10 px-6 rounded-full hover:from-cyandark hover:to-cyanmid;
   }
+
+  /* Global styles */
+  .navbar {
+    @apply flex fixed top-0 left-0 w-full shadow z-50;
+    transition: top 0.3s;
+  }
+
+  .navbar .container {
+    @apply flex justify-between items-center px-4 py-2;
+  }
+
+  .navHolder {
+    @apply flex items-center;
+  }
+
+  .nav-link {
+    @apply px-4 py-2;
+  }
+
+  .hamburger {
+    @apply hidden cursor-pointer;
+  }
+
+  .hamburger .bar {
+    @apply block h-1 w-6 my-1 bg-txtdark;
+  }
+
+  /* Additional custom styles for the open state */
+  .navbar.open .nav-list {
+    @apply flex;
+  }
+
+  @media (max-width: 576px) { 
+
+  }
+  
+  @media (min-width: 768px) { 
+    
+  }
+  
+  @media (max-width: 992px) {
+    .nav-list {
+      @apply flex-col fixed top-16 left-0 w-full h-[140vh] bg-bglight z-50 hidden;
+    }
+  
+    .nav-list.open {
+      @apply flex;
+    }
+  
+    .nav-link {
+      @apply justify-center items-center h-16 pr-10;
+      text-align: right !important;
+    }
+
+    .hireBtn {
+      @apply mr-4
+    }
+  
+    .nav-link a {
+      @apply text-txtdark mr-10;
+    }
+  
+    .hamburger {
+      @apply py-2 px-2 h-8 w-8 box-content cursor-pointer relative;
+    }
+  
+    .hamburger .bar {
+      @apply w-full h-1 rounded bg-txtdark;
+    }
+  
+    .hamburger .bar:nth-child(1) {
+      @apply top-2 transition-all duration-200;
+    }
+  
+    .hamburger .bar:nth-child(2) {
+      @apply top-4 transition-all duration-200;
+    }
+  
+    .hamburger .bar:nth-child(3) {
+      @apply top-6 transition-all duration-200;
+    }
+  
+    .navbar.open .hamburger .bar:nth-child(1) {
+      @apply top-[50%] translate-y-[0%] rotate-[-45deg] transition duration-200;
+    }
+  
+    .navbar.open .hamburger .bar:nth-child(2) {
+      @apply hidden transition duration-200;
+    }
+  
+    .navbar.open .hamburger .bar:nth-child(3) {
+      @apply top-[50%] translate-y-[-150%] rotate-[45deg] transition duration-200;
+    }
+  
+    .navbar .container {
+      @apply relative;
+    }
+  
+    .navbar.open .nav-list {
+      @apply block;
+    }
+  
+    .nav-link::after {
+      @apply content-[""] absolute w-full h-2 rounded bottom-2 left-0;
+    }
+  
+    .nav-link {
+      @apply my-6 text-txtdark font-medium w-full text-center;
+    }
+
+    .hamburger {
+      @apply block;
+    }
+  }
+  
+  @media (min-width: 1200px) { 
+    
+  }
 }

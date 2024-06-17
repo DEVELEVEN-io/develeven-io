@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
         <div className="flex flex-row items-center">
           <Image src={images.logo} alt="logo-ct" className="w-10" />
-          <span class="ml-2 text-highlight font-bold text-xl">DevEleven-io</span>
+          <span className="ml-2 text-highlight font-bold text-xl">DevEleven-io</span>
         </div>
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           <li>

@@ -7,7 +7,7 @@ export default function Home() {
   useEffect(() => {
     function stickyNav() {
       var navbar = document.querySelector(".navbar");
-      navbar.classList.toggle("sticky", window.pageYOffset > 0);
+      navbar.classList.toggle("scrolled", window.pageYOffset > 0);
     }
 
     window.addEventListener("scroll", stickyNav);

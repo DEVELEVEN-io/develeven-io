@@ -1,12 +1,13 @@
 "use client";
 
+import { useState, useEffect } from 'react';
 import { images } from "../../constants";
 import Image from 'next/image';
-import { Link, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
-import { useEffect } from 'react';
+import { Link, Events, scrollSpy } from 'react-scroll';
 
 const Navbar = () => {
-  
+  const [isOpen, setIsOpen] = useState(false);
+
   useEffect(() => {
     Events.scrollEvent.register('begin', (to, element) => {
       console.log('begin', to, element);
@@ -24,17 +25,20 @@ const Navbar = () => {
     };
   }, []);
 
-  return (
-    <nav className='navbar' id='navbar'>
-      <div className="container flex justify-between mx-auto text-center items-center">
+  const handleMenuToggle = () => {
+    setIsOpen(!isOpen);
+  };
 
+  return (
+    <nav className={`navbar ${isOpen ? 'open' : ''}`} id='navbar'>
+      <div className="container flex justify-between mx-auto text-center items-center">
         <div className="navHolder flex py-4">
           <div className='brand-logo flex items-center mr-4'>
             <Image src={images.logo} alt="Logo" width={40} height={40} />
             <span className="ml-2 text-highlight font-bold text-xl">DevEleven-io</span>
           </div>
 
-          <ul className='nav-list flex items-center'>
+          <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
             <li className='nav-link px-4 py-2'>
               <Link to="work" activeClass="active" spy={true} smooth={true} offset={-250} duration={500} className="text-txtdark">Work</Link>
             </li>
@@ -57,7 +61,7 @@ const Navbar = () => {
           Hire Us!
         </button>
 
-        <div className='menuBtn hamburger'>
+        <div className='menuBtn hamburger' onClick={handleMenuToggle}>
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>
