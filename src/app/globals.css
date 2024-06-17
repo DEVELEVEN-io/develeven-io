@@ -126,10 +126,10 @@
     }
 
     .achivements {
-      @apply flex-wrap ;
+      @apply flex-wrap;
     }
 
-    .achivements {
+    .achivement {
       @apply box-border w-1/2;
     }
   }
