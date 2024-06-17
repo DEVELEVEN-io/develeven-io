@@ -124,9 +124,21 @@
     .hamburger {
       @apply block;
     }
+
+    .achivements {
+      @apply flex-wrap ;
+    }
+
+    .achivements {
+      @apply box-border w-1/2;
+    }
   }
   
   @media (min-width: 1200px) { 
     
   }
+}
+
+.achivements {
+  @apply w-full;
 }
