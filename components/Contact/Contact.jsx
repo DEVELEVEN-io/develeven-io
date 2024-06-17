@@ -76,7 +76,7 @@ const Contact = () => {
     <section id="contact" className="contact container flex flex-col justify-between mx-auto mt-7 w-full">
       <div className="flex flex-row">
         <form
-          className="contact-form bg-bglight p-4 rounded-lg mr-4 w-full"
+          className="contact-form bg-bglight px-12 py-8 rounded-lg mr-4 w-full"
           action="https://formspree.io/f/mdobjjbo"
           method="POST"
         >
@@ -122,37 +122,37 @@ const Contact = () => {
           />
         </form>
       
-        <div className="contact-info bg-bgdark p-4 rounded-lg ml-4 w-full text-white">
+        <div className="contact-info bg-bgdark p-4 rounded-lg ml-4 my-auto w-full text-white">
 
-          <div className="contactInfoHolder flex flex-row items-center">
-            <div className="contactIcon text-3xl bgGradient w-16 h-16 rounded-full flex justify-center items-center mr-4">
+          <div className="contactInfoHolder flex flex-row items-center my-4">
+            <div className="contactIcon text-3xl bgGradientTop w-16 h-16 rounded-full flex justify-center items-center mr-4">
               <LuPhoneCall/>
             </div>
             <div className="py-8">
               <p><strong>Phone</strong></p>
-              <p>+01 123 654 8096</p>
+              <p>+88 019 50 422 568</p>
             </div>
           </div>
 
-          <div className="contactInfoHolder flex flex-row items-center">
+          <div className="contactInfoHolder flex flex-row items-center my-4">
 
-            <div className="contactIcon text-3xl bgGradient w-16 h-16 rounded-full flex justify-center items-center mr-4">
+            <div className="contactIcon text-3xl bgGradientTop w-16 h-16 rounded-full flex justify-center items-center mr-4">
               <IoLocationOutline/>
             </div>
 
             <div className="py-8">
               <p><strong>Email</strong></p>
-              <p>gerolddesign@mail.com</p>
+              <p>develeven@outlook.com</p>
             </div>
           </div>
 
-          <div className="contactInfoHolder flex flex-row items-center">
-            <div className="contactIcon text-3xl bgGradient w-16 h-16 rounded-full flex justify-center items-center mr-4">
+          <div className="contactInfoHolder flex flex-row items-center my-4">
+            <div className="contactIcon text-3xl bgGradientTop w-16 h-16 rounded-full flex justify-center items-center mr-4">
               <IoMailOutline/>
             </div>
             <div className="py-8">
               <p><strong>Address</strong></p>
-              <p>Warne Park Street Pine, FL 33157, New York</p>
+              <p>Rangpur, Bangladesh</p>
             </div>
           </div>
 

@@ -136,6 +136,10 @@
   background: linear-gradient(to right, var(--cyangreen) -15%, var(--cyandark2) 70%);
 }
 
+.bgGradientTop {
+  background: linear-gradient(to top, var(--cyangreen) -15%, var(--cyandark2) 90%);
+}
+
 .gradientAnim {
   background: linear-gradient(to right, var(--cyangreen) -15%, var(--cyandark2) 70%);
   transition: all 0.3s ease-in-out;
