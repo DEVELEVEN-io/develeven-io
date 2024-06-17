@@ -48,7 +48,7 @@ const Navbar = () => {
               <Link to="testimonials" spy={true} smooth={true} offset={50} duration={500} className="text-txtdark">Testimonials</Link>
             </li>
             <li className='nav-link px-4 py-2'>
-              <Link to="contact" spy={true} smooth={true} offset={50} duration={500} className="text-txtdark">Contact</Link>
+              <Link to="contact" spy={true} smooth={true} offset={-250} duration={500} className="text-txtdark">Contact</Link>
             </li>
           </ul>
         </div>

@@ -1,12 +1,17 @@
 /* Define the custom colors as CSS variables */
 :root {
+  --highlight: #59e1ff;
   --txtdark: #DCF0F1;
   --cyan: #50F7CF;
-  --cyangreen: #23F8C5;
   --cyanblue: #00eeff;
+  --cyangreen: #23F8C5;
+  --cyanmid: #01C3CF;
   --cyandark: #00eeff;
   --cyandark2: #144162;
   --cyandark3: #00719e;
+  --bgdark: #071115;
+  --bglight: #0B1B22;
+  --txtdark: #DCF0F1;
 }
 
 
@@ -249,4 +254,113 @@ button.active {
 
 .memberDesc {
   display: none;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.contact-form, .contact-info {
+  background-color: #1e1e1e; /* Dark background */
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.contact-form h1, .contact-info h1 {
+  /* color: #00BFFF; */
+}
+
+.contact-form p, .contact-info p {
+  color: var(--txtdark);
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: var(--bgdark);
+  border: 1px solid var(--cyandark2);
+  border-radius: 4px;
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial, sans-serif;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.custom-select select {
+  display: none; /* Hide the original SELECT element */
+}
+
+.select-selected {
+  background-color: var(--bgdark); /* Darker background */
+  color: var(--txtdark); /* White text color */
+  padding: 10px;
+  border: 1px solid var(--cyandark2);
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: var(--cyandark2) transparent transparent transparent; /* White arrow */
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent var(--cyandark2) transparent; /* White arrow */
+  top: 7px;
+}
+
+.select-items {
+  position: absolute;
+  background-color: var(--bgdark); /* Darker background */
+  color: var(--txtdark); /* White text color */
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid var(--cyandark2);
+  border-top: none; /* Remove top border to connect with the select-selected */
+  border-radius: 0 0 4px 4px; /* Rounded corners at the bottom */
+}
+
+.select-hide {
+  display: none !important;
+}
+
+.select-items div {
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: var(--bglight);
+}
+
+.submit-button {
+  display: block;
+  /* width: 100%; */
+  padding: 15px;
+  /* background: linear-gradient(to right, #00BFFF, #1e90ff);
+  color: #ffffff; */
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  /* background: linear-gradient(to right, #1e90ff, #00BFFF); */
 }
