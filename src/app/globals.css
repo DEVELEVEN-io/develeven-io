@@ -138,6 +138,11 @@
     .contact div {
       @apply flex-col;
     }
+
+    .contactInfoHolder {
+      flex-direction: row !important; 
+      justify-content: left;
+    }
   }
   
   @media (min-width: 1200px) { 

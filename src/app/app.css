@@ -374,6 +374,12 @@ button.active {
   /* background: linear-gradient(to right, #1e90ff, #00BFFF); */
 }
 
+.memberLink:hover {
+  color: var(--cyandark);
+  transition: all 0.1s ease-in-out;
+  transform: scale(1.1);
+}
+
 
 @media (max-width: 576px) { 
   .achivements {
@@ -385,6 +391,20 @@ button.active {
     width: 100% !important;
     margin: 0 auto;
     justify-content: center;
+  }
+
+  .memberCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .memberCard {
+    box-sizing: border-box;
+    width: 45% !important;
+    margin: 0 auto;
+    justify-content: center;
+    margin: 15px 0;
+    flex-basis: content;
   }
 }
 
@@ -402,6 +422,20 @@ button.active {
     position: absolute;
     top: 16px;
     right: 24px;
+  }
+
+  .memberCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .memberCard {
+    box-sizing: border-box;
+    width: 45% !important;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    margin: 15px 0;
   }
 
 
