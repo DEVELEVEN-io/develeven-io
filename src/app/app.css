@@ -291,6 +291,11 @@ button.active {
   background-color: var(--bgdark);
   border: 1px solid var(--cyandark2);
   border-radius: 4px;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: var(--cyandark);
 }
 
 .custom-select {
