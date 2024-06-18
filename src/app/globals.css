@@ -53,7 +53,7 @@
   
   @media (max-width: 992px) {
     .nav-list {
-      @apply flex-col fixed top-16 left-0 w-full h-[140vh] bg-bglight z-50 hidden;
+      @apply flex-col fixed top-20 left-0 w-full h-[140vh] bg-bglight z-50 hidden;
     }
   
     .nav-list.open {
@@ -78,7 +78,7 @@
     }
   
     .hamburger .bar {
-      @apply w-full h-1 rounded bg-txtdark;
+      @apply w-full h-1 rounded bg-cyanblue;
     }
   
     .hamburger .bar:nth-child(1) {
@@ -94,7 +94,7 @@
     }
   
     .navbar.open .hamburger .bar:nth-child(1) {
-      @apply top-[50%] translate-y-[0%] rotate-[-45deg] transition duration-200;
+      @apply top-[50%] translate-y-[25%] rotate-[-45deg] transition duration-200;
     }
   
     .navbar.open .hamburger .bar:nth-child(2) {
@@ -131,6 +131,10 @@
 
     .achivement {
       @apply box-border w-1/2;
+    }
+
+    .contact div {
+      @apply flex-col;
     }
   }
   

@@ -2,7 +2,7 @@
 
 const Header = () => {
   return (
-    <header className="header container flex flex-col justify-between mx-auto mt-12 w-full">
+    <header className="header container flex flex-col justify-between mx-auto mt-32 w-full">
       <h2 className="text-2xl font-bold text-cyanblue my-2">DevEleven</h2>
       <h1 className="text-6xl font-bold text-gradient my-4">Turning Ideas <br />
       into Reality</h1>
