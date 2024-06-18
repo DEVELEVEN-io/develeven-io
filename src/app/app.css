@@ -20,6 +20,32 @@
   /* cursor: default; */
 }
 
+/* Scrollbar for Webkit browsers (Chrome, Safari, and Edge Chromium) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bglight);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cyanblue);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyanmid);
+}
+
+/* Scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--cyanmid) var(--bglight);
+}
+
+
 /* Navbar.module.css */
 .navbar {
   position: relative;
