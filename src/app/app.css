@@ -376,11 +376,35 @@ button.active {
 
 
 @media (max-width: 576px) { 
-  
+  .achivements {
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .achivement {
+    box-sizing: border-box;
+    width: 100% !important;
+    margin: 0 auto;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) { 
-  
+  .service-card {
+    position: relative;
+    flex-wrap: wrap;
+  }
+
+  .service-card h3 {
+    margin: 0;
+  }
+
+  .service-arrow {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+  }
+
+
 }
 
 @media (max-width: 992px) {

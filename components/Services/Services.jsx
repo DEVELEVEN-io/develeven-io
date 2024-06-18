@@ -12,7 +12,7 @@ const Services = () => {
           <span className="service-num text-2xl font-bold mr-4">01</span>
           <h3 className="text-3xl font-bold text-txtdark my-2 mx-4">Web Development</h3>
           <p className="my-4 ml-auto">We break down complex user experience problems to create integrity-focused solutions that connect billions of people</p>
-            <div className="text-2xl ml-4">
+            <div className="service-arrow text-2xl ml-4">
               <FaLongArrowAltRight />
             </div>
         </div>
@@ -21,7 +21,7 @@ const Services = () => {
           <span className="service-num text-2xl font-bold mr-4">02</span>
           <h3 className="text-3xl font-bold text-txtdark my-2 mx-4">Web Development</h3>
           <p className="my-4 ml-auto">We break down complex user experience problems to create integrity-focused solutions that connect billions of people</p>
-          <div className="text-2xl ml-4">
+          <div className="service-arrow text-2xl ml-4">
               <FaLongArrowAltRight />
             </div>
         </div>
@@ -30,7 +30,7 @@ const Services = () => {
           <span className="service-num text-2xl font-bold mr-4">03</span>
           <h3 className="text-3xl font-bold text-txtdark my-2 mx-4">Web Development</h3>
           <p className="my-4 ml-auto">We break down complex user experience problems to create integrity-focused solutions that connect billions of people</p>
-          <div className="text-2xl ml-4">
+          <div className="service-arrow text-2xl ml-4">
               <FaLongArrowAltRight />
             </div>
         </div>
@@ -39,7 +39,7 @@ const Services = () => {
           <span className="service-num text-2xl font-bold mr-4">04</span>
           <h3 className="text-3xl font-bold text-txtdark my-2 mx-4">Web Development</h3>
           <p className="my-4 ml-auto">We break down complex user experience problems to create integrity-focused solutions that connect billions of people</p>
-          <div className="text-2xl ml-4">
+          <div className="service-arrow text-2xl ml-4">
               <FaLongArrowAltRight />
             </div>
         </div>

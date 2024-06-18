@@ -47,8 +47,10 @@
 
   }
   
-  @media (min-width: 768px) { 
-    
+  @media (max-width: 768px) { 
+    .achivement {
+      @apply box-border w-1/2;
+    }
   }
   
   @media (max-width: 992px) {
