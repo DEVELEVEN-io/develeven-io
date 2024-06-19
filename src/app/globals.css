@@ -9,7 +9,7 @@
   }
 
   .hireBtn {
-    @apply ml-auto mr-0 bg-gradient-to-r to-cyandark from-cyanmid font-semibold h-10 px-6 rounded-full hover:from-cyandark hover:to-cyanmid;
+    @apply ml-auto mr-0;
   }
 
   /* Global styles */

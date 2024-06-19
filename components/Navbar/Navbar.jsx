@@ -57,7 +57,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <button className="btn hireBtn bg-gradient-to-r from-cyanmid to-cyandark font-semibold py-2 px-4 rounded-full hover:from-cyandark hover:to-cyanmid">
+        <button className="btn hireBtn btnGradient font-semibold py-2 px-4 rounded-full">
           Hire Us!
         </button>
 

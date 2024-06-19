@@ -117,7 +117,7 @@ const Contact = () => {
           ></textarea>
           <input
             type="submit"
-            className="submit-button w-48 bg-gradient-to-r from-cyanmid to-cyandark font-semibold py-3 px-4 rounded-full hover:from-cyandark hover:to-cyanmid"
+            className="submit-button w-48 btnGradient"
             value="Send Message"
           />
         </form>
