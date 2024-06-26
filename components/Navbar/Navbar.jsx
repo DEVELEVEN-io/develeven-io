@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const navLinks = [
     { to: 'work', offset: -250, label: 'Work' },
-    { to: 'services', offset: -350, label: 'Services' },
+    { to: 'services', offset: -300, label: 'Services' },
     { to: 'team', offset: -250, label: 'Team' },
     { to: 'testimonials', offset: 50, label: 'Testimonials' },
     { to: 'contact', offset: -250, label: 'Contact' },
