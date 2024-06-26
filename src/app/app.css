@@ -166,6 +166,19 @@
 
 /* Text gradient styles */
 
+/* .txtGradientAnim {
+  background: linear-gradient(75deg, var(--cyandark3), var(--cyandark2), var(--cyandark3), var(--cyanmid2)) !important;
+  background-size: 300% !important;
+  background-position: left !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  transition: background-position 300ms ease-in-out !important;
+}
+
+.txtGradientAnim:hover {
+  background-position: right !important;
+} */
+
 .text-gradient {
   font-size: 2.25rem; 
   font-weight: 700;

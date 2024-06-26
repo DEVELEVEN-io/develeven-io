@@ -18,10 +18,10 @@ const Team = () => {
             <div className="memberDesc">
               <p className="memberText">Abid Al Wassie is a Senior Developer at DevEleven-io. He is a Full-Stack Developer. He is the creator of <a className="text-cyanblue underline font-semibold" href="https://youtube.com/@oneManDev" target="_blank">oneManDev</a>.</p>
               <ul className="memberLinks flex">
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://abidalwassie.me" target="_blank"><FaGlobe /></a></li>
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://github.com/AbidAlWassie" target="_blank"><FaGithub /></a></li>
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://youtube.com/@oneManDev" target="_blank"><FaYoutube /></a></li>
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://www.linkedin.com/in/abidalwassie" target="_blank"><FaLinkedin /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://abidalwassie.me" target="_blank"><FaGlobe /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://github.com/AbidAlWassie" target="_blank"><FaGithub /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://youtube.com/@oneManDev" target="_blank"><FaYoutube /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://www.linkedin.com/in/abidalwassie" target="_blank"><FaLinkedin /></a></li>
               </ul>
             </div>
           </div>
@@ -36,10 +36,10 @@ const Team = () => {
             <div className="memberDesc">
               <p className="memberText">Ragib Al Asad is a senior backend developer of DevEleven-io with 4+ years of experience. He is the founder of DevEleven. Holds strong understandings in backend web technology like FastAPI</p>
               <ul className="memberLinks flex">
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://facebook.com/ragibalasad" target="_blank"><FaGlobe /></a></li>
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://github.com/ragibalasad" target="_blank"><FaGithub /></a></li>
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://youtube.com/@ragibalasad" target="_blank"><FaYoutube /></a></li>
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://www.linkedin.com/in/ragibalasad" target="_blank"><FaLinkedin /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://facebook.com/ragibalasad" target="_blank"><FaGlobe /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://github.com/ragibalasad" target="_blank"><FaGithub /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://youtube.com/@ragibalasad" target="_blank"><FaYoutube /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://www.linkedin.com/in/ragibalasad" target="_blank"><FaLinkedin /></a></li>
               </ul>
             </div>
           </div>
@@ -54,10 +54,10 @@ const Team = () => {
             <div className="memberDesc">
               <p className="memberText">Shihab Shahriar Rashu is one of the team members of DevEleven-io. He is a web developer specializing in JavaScript and Python programming languages</p>
               <ul className="memberLinks flex">
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://facebook.com/mdshihabshahriar.rashu" target="_blank"><FaGlobe /></a></li>
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://github.com/muhammadshihab" target="_blank"><FaGithub /></a></li>
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://youtube.com/" target="_blank"><FaYoutube /></a></li>
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://www.linkedin.com/" target="_blank"><FaLinkedin /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://facebook.com/mdshihabshahriar.rashu" target="_blank"><FaGlobe /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://github.com/muhammadshihab" target="_blank"><FaGithub /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://youtube.com/" target="_blank"><FaYoutube /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://www.linkedin.com/" target="_blank"><FaLinkedin /></a></li>
               </ul>
             </div>
           </div>
@@ -72,10 +72,10 @@ const Team = () => {
             <div className="memberDesc">
               <p className="memberText">Abid Al Wassie is the senior developer of DevEleven-io. He is a full stack developer with 4+ years of experience. He is the creator of oneManDev. He has a long history with JavaScript and other technologies.</p>
               <ul className="memberLinks flex">
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://abidalwassie.me" target="_blank"><FaGlobe /></a></li>
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://github.com/AbidAlWassie" target="_blank"><FaGithub /></a></li>
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://youtube.com/@oneManDev" target="_blank"><FaYoutube /></a></li>
-                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a className="textGradientAnim" href="https://www.linkedin.com/in/abidalwassie" target="_blank"><FaLinkedin /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://abidalwassie.me" target="_blank"><FaGlobe /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://github.com/AbidAlWassie" target="_blank"><FaGithub /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://youtube.com/@oneManDev" target="_blank"><FaYoutube /></a></li>
+                <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://www.linkedin.com/in/abidalwassie" target="_blank"><FaLinkedin /></a></li>
               </ul>
             </div>
           </div>

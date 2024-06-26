@@ -8,26 +8,17 @@ import { Link, Events, scrollSpy } from 'react-scroll';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-    Events.scrollEvent.register('begin', (to, element) => {
-      console.log('begin', to, element);
-    });
-
-    Events.scrollEvent.register('end', (to, element) => {
-      console.log('end', to, element);
-    });
-
-    scrollSpy.update();
-
-    return () => {
-      Events.scrollEvent.remove('begin');
-      Events.scrollEvent.remove('end');
-    };
-  }, []);
-
   const handleMenuToggle = () => {
     setIsOpen(!isOpen);
   };
+
+  const navLinks = [
+    { to: 'work', offset: -250, label: 'Work' },
+    { to: 'services', offset: -350, label: 'Services' },
+    { to: 'team', offset: -250, label: 'Team' },
+    { to: 'testimonials', offset: 50, label: 'Testimonials' },
+    { to: 'contact', offset: -250, label: 'Contact' },
+  ];
 
   return (
     <nav className={`navbar ${isOpen ? 'open' : ''}`} id='navbar'>
@@ -39,21 +30,21 @@ const Navbar = () => {
           </div>
 
           <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
-            <li className='nav-link px-4 py-2'>
-              <Link to="work" activeClass="active" spy={true} smooth={true} offset={-250} duration={500} className="text-txtdark">Work</Link>
-            </li>
-            <li className='nav-link px-4 py-2'>
-              <Link to="services" spy={true} smooth={true} offset={-350} duration={500} className="text-txtdark">Services</Link>
-            </li>
-            <li className='nav-link px-4 py-2'>
-              <Link to="team" spy={true} smooth={true} offset={-250} duration={500} className="text-txtdark">Team</Link>
-            </li>
-            <li className='nav-link px-4 py-2'>
-              <Link to="testimonials" spy={true} smooth={true} offset={50} duration={500} className="text-txtdark">Testimonials</Link>
-            </li>
-            <li className='nav-link px-4 py-2'>
-              <Link to="contact" spy={true} smooth={true} offset={-250} duration={500} className="text-txtdark">Contact</Link>
-            </li>
+            {navLinks.map((link, index) => (
+              <li key={index} className='nav-link px-4 py-2'>
+                <Link
+                  to={link.to}
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={link.offset}
+                  duration={500}
+                  className="text-txtdark"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
