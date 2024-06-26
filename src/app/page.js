@@ -60,7 +60,6 @@ function updateCount(num, maxNum) {
 function loadSkills() {
   const skCounters = document.querySelectorAll(".counter span");
   const progressBars = document.querySelectorAll(".sk-progress svg circle");
-  // const scrollable =  document.documentElement.scrollHeight - window.innerHeight;
   
     const scrolled = window.scrollY;
 
@@ -89,13 +88,12 @@ function loadSkills() {
 
 
 function mlCounter() {
-  // let mlSection = document.querySelectorAll(".milestones");
+
   let mlCounters = document.querySelectorAll(".number span");
   
   const scrolled = window.scrollY;
   
   if (scrolled >= 1750) {
-    // console.log(mlCounters.length);
     
     for (let i = 0; i < mlCounters.length; i++) {
       mlPlayed = true;

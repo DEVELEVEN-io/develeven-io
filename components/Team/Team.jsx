@@ -43,7 +43,7 @@ const teamMembers = [
     name: "Raiyan Takrim",
     image: images.portrait_raiyan_md,
     title: "Web Developer",
-    description: "Raiyan Takrim  is a frontend developer at DevEleven-io. He posseses experties in HTML, CSS, JS, Python, React etc.",
+    description: "Raiyan Takrim  is a frontend developer at DevEleven-io. He possesses expertise in HTML, CSS, JS, Python, React, etc.",
     links: {
       website: "https://abidalwassie.me",
       github: "https://github.com/AbidAlWassie",
@@ -62,7 +62,14 @@ const Team = () => {
       <div className="memberCards row flex flex-row my-4">
         {teamMembers.map((member, index) => (
           <div key={index} className="memberCard bg-bglight rounded-t-md rounded-l-md rounded-b-none flex flex-col mx-auto relative">
-            <Image src={member.image} alt={member.name} width={315} height={386.4} className="object-cover rounded-t-md rounded-l-md rounded-b-none" />
+            <Image
+              src={member.image}
+              alt={member.name}
+              width={315}
+              height={386}
+              className="object-cover rounded-t-md rounded-l-md rounded-b-none"
+              priority  // Add priority property here
+            />
             <div className="memberGradient absolute inset-0 rounded-t-md rounded-l-md rounded-b-none" />
             <div className="memberInfo flex flex-col mx-auto">
               <span className="memberName mb-1">{member.name}</span>
