@@ -137,7 +137,7 @@ const Contact = () => {
           <div className="contactInfoHolder flex flex-row items-center my-4">
 
             <div className="contactIcon text-3xl bgGradientTop w-16 h-16 rounded-full flex justify-center items-center mr-4">
-              <IoLocationOutline/>
+              <IoMailOutline/>
             </div>
 
             <div className="py-8">
@@ -148,7 +148,7 @@ const Contact = () => {
 
           <div className="contactInfoHolder flex flex-row items-center my-4">
             <div className="contactIcon text-3xl bgGradientTop w-16 h-16 rounded-full flex justify-center items-center mr-4">
-              <IoMailOutline/>
+              <IoLocationOutline/>
             </div>
             <div className="py-8">
               <p><strong>Address</strong></p>
