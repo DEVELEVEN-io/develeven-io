@@ -70,8 +70,8 @@ const Tech = () => {
   }
 
   return (
-    <section id="tech" className="container flex flex-col justify-between mx-auto mt-14 w-full">
-      <h2 className="text-4xl font-bold text-gradient my-2">Technologies we use</h2>
+    <section id="tech" className="container flex flex-col justify-between mx-auto mt-14 w-full text-center">
+      <h2 className="text-4xl font-bold textGradient2 my-2">Technologies we use</h2>
       <p className="my-4">We try to adapt to the latest and the most advanced tech and frameworks on our projects.</p>
 
       <div className="skills-wrap">
