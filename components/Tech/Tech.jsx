@@ -11,6 +11,8 @@ const skillsData = [
   { name: 'Next.js', proficiency: 70, image: images.nextjs, circleClass: 'p-circle6' },
   { name: 'Tailwind', proficiency: 90, image: images.tailwind, circleClass: 'p-circle7' },
   { name: 'Python', proficiency: 75, image: images.python, circleClass: 'p-circle8' },
+  { name: 'FastAPI', proficiency: 65, image: images.fastapi, circleClass: 'p-circle12' },
+  { name: 'MongoDB', proficiency: 58, image: images.mongodb, circleClass: 'p-circle13' },
   { name: 'Figma', proficiency: 90, image: images.figma, circleClass: 'p-circle9' },
   { name: 'Git', proficiency: 100, image: images.git, circleClass: 'p-circle10' },
   { name: 'Firebase', proficiency: 55, image: images.firebase, circleClass: 'p-circle11' },
