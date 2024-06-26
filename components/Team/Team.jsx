@@ -61,7 +61,7 @@ const Team = () => {
 
       <div className="memberCards row flex flex-row my-4">
         {teamMembers.map((member, index) => (
-          <div key={index} className="memberCard bg-bglight rounded-t-md rounded-l-md rounded-b-none flex flex-col mx-auto relative mx-2">
+          <div key={index} className="memberCard bg-bglight rounded-t-md rounded-l-md rounded-b-none flex flex-col mx-auto relative">
             <Image
               src={member.image}
               alt={member.name}
