@@ -43,6 +43,17 @@
     @apply flex;
   }
 
+  /* for extra small devices */
+  @media (max-width: 372px) { 
+    .hireBtn {
+      padding: 8px 0 !important;
+      font-size: 0.9rem !important;
+    }
+    .brand-logo span {
+      font-size: 1rem;
+    }
+  }
+
   @media (max-width: 576px) { 
 
   }
