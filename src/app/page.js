@@ -81,8 +81,8 @@ export default function Home() {
       <Header />
       <Work />
       <Services />
-      <Team />
-      {/* <Tech /> */}
+      {/* <Team /> */}
+      <Tech />
       <Contact />
       <Footer />
     </div>
