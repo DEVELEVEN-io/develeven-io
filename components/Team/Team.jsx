@@ -62,7 +62,7 @@ const Team = () => {
       <div className="memberCards row flex flex-row my-4">
         {teamMembers.map((member, index) => (
           <div key={index} className="memberCard bg-bglight rounded-t-md rounded-l-md rounded-b-none flex flex-col mx-auto relative">
-            <Image src={member.image} alt={member.name} width={300} height={300} className="object-cover rounded-t-md rounded-l-md rounded-b-none" />
+            <Image src={member.image} alt={member.name} width={300} height={600} className="object-cover rounded-t-md rounded-l-md rounded-b-none" />
             <div className="memberGradient absolute inset-0 rounded-t-md rounded-l-md rounded-b-none" />
             <div className="memberInfo flex flex-col mx-auto">
               <span className="memberName mb-1">{member.name}</span>
