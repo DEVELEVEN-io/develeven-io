@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   body {
     @apply bg-bgdark text-txtdark;
@@ -43,8 +42,19 @@
     @apply flex;
   }
 
+  .skills-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+
   .sk-progress {
-    @apply w-[150px] h-[150px] relative scale-[1] xl:scale-[1.2]
+    @apply w-[150px] h-[150px] relative scale-[1] xl:scale-[1.2];
+  }
+
+  .achivements {
+    @apply w-full;
   }
 
   /* max-width: 372px START */
@@ -59,32 +69,25 @@
     .contact-form {
       padding: 24px 24px !important;
     }
-    
-    
+
     .skills-wrap {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: repeat(1, 150px);
+      gap: 1rem;
     }
+    
   }
   /* max-width: 372px END */
 
   /* max-width: 424px START */
-  @media (max-width: 424px) { 
+  @media (max-width: 424px) {
     .skills-wrap {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: repeat(2, 150px);
+      gap: 1rem;
     }
   }
   /* max-width: 424px END */
 
 
   /* max-width: 576px START */
-  @media (max-width: 576px) { 
-    .skills-wrap {
-      grid-template-columns: repeat(3, 150px);
-    }
+  @media (max-width: 576px) {
   }
   /* max-width: 576px END */
   
@@ -95,9 +98,7 @@
     .achivement {
       @apply box-border w-1/2;
     }
-    /* .skills-wrap {
-      grid-template-columns: repeat(3, 150px);
-    } */
+    
   }
   /* max-width: 768px END */
 
@@ -194,26 +195,15 @@
       flex-direction: row !important; 
       justify-content: left;
     }
-    /* .skills-wrap {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: repeat(3, 150px);
-    } */
   }
-    /* max-width: 992px END */
+  /* max-width: 992px END */
   
   /* max-width: 1024px START */
-  @media (max-width: 1024px) { 
+  @media (max-width: 1024px) {
     .skills-wrap {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: repeat(4, 150px);
+      gap: 1rem;
     }
   }
   /* max-width: 1024px END */
 
-}
-
-.achivements {
-  @apply w-full;
 }

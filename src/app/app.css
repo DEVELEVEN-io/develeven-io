@@ -486,13 +486,6 @@ button.active {
   display: flex;
 }
 
-.skills-wrap {
-  display: grid;
-  grid-template-columns: repeat(5, 150px);
-  justify-content: space-between;
-}
-
-
 .skill {
   display: flex;
   flex-direction: column;
