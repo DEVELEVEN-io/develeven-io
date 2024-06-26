@@ -52,7 +52,7 @@ const Team = () => {
           <span className="memberName mb-1">Shihab Shahriar Rashu</span>
             <span className="memberTitle text-highlight my-0">Web Developer</span>
             <div className="memberDesc">
-              <p className="memberText">Shihab Shahriar Rashu is a web developer at DevEleven-io. He's an integral part of the development team, with expertise in JavaScript and Python.</p>
+              <p className="memberText">Shihab Shahriar Rashu is a web developer at DevEleven-io. He&apos;s an integral part of the development team, with expertise in JavaScript and Python.</p>
               <ul className="memberLinks flex">
                 <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://facebook.com/mdshihabshahriar.rashu" target="_blank"><FaFacebook/></a></li>
                 <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://github.com/muhammadshihab" target="_blank"><FaGithub /></a></li>
