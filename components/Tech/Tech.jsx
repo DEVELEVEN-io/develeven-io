@@ -17,8 +17,6 @@ const skillsData = [
 ];
 
 const Tech = () => {
-  // Use useClient to ensure component is rendered on the client side
-
   const [skillsPlayed, setSkillsPlayed] = useState(false);
 
   useEffect(() => {
@@ -27,7 +25,7 @@ const Tech = () => {
       const threshold = 1200;
 
       if (!skillsPlayed && scrolled >= threshold) {
-        loadSkills();
+        loadSkills(); // Call loadSkills when scroll threshold is reached
         setSkillsPlayed(true);
       }
     }
@@ -38,7 +36,7 @@ const Tech = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [skillsPlayed]);
+  }, [skillsPlayed]); // Only depend on skillsPlayed
 
   function loadSkills() {
     const skCounters = document.querySelectorAll('.counter span');
@@ -57,7 +55,7 @@ const Tech = () => {
     });
 
     setTimeout(() => {
-      setSkillsPlayed(true);
+      setSkillsPlayed(true); // Update skillsPlayed after animation completes
     }, 2000);
   }
 
