@@ -1,4 +1,3 @@
-// Tech.jsx
 "use client";
 import { useEffect, useState } from 'react';
 import { images } from '../../constants';
