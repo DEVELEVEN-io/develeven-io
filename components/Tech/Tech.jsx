@@ -25,18 +25,17 @@ const Tech = () => {
       const threshold = 1200;
 
       if (!skillsPlayed && scrolled >= threshold) {
-        loadSkills(); // Call loadSkills when scroll threshold is reached
+        loadSkills();
         setSkillsPlayed(true);
       }
     }
 
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [skillsPlayed]); // Only depend on skillsPlayed
+  }, [skillsPlayed]);
 
   function loadSkills() {
     const skCounters = document.querySelectorAll('.counter span');
@@ -55,7 +54,7 @@ const Tech = () => {
     });
 
     setTimeout(() => {
-      setSkillsPlayed(true); // Update skillsPlayed after animation completes
+      setSkillsPlayed(true);
     }, 2000);
   }
 

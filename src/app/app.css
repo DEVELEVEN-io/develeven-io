@@ -59,10 +59,6 @@
   cursor: pointer;
 }
 
-/* Cursor Styles End */
-
-
-/* Navbar.module.css */
 .navbar {
   position: relative;
   z-index: 1000; 
@@ -82,8 +78,6 @@
 
 .navbar.scrolled {
   position: fixed;
-  /* padding-top: 1rem;
-  padding-bottom: 1rem; */
   background: #0e37477c;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   -moz-backdrop-filter: blur(5px);
@@ -117,7 +111,6 @@
   text-decoration: none;
   padding-left: 14px;
   padding-right: 14px;
-  /* padding: 14px; */
   display: block;
 }
 
@@ -134,7 +127,7 @@
 .nav-link a {
   position: relative;
   display: inline-block;
-  padding-bottom: 5px; /* Adjust as needed */
+  padding-bottom: 5px;
 }
 
 .nav-link a::after {
@@ -142,14 +135,14 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 0; /* Initial width */
-  height: 3px; /* Height of the gradient border */
-  background: linear-gradient(90deg, var(--cyanblue) 1%, var(--cyandark2) 100%); /* Gradient colors */
-  transition: width 0.3s ease; /* Transition effect */
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cyanblue) 1%, var(--cyandark2) 100%);
+  transition: width 0.3s ease;
 }
 
 .nav-link a.active::after {
-  width: 100%; /* Full width on active */
+  width: 100%;
 }
 
 .btn {
@@ -181,20 +174,6 @@
   background-position: right; 
 }
 
-/* Text gradient styles */
-
-/* .txtGradientAnim {
-  background: linear-gradient(75deg, var(--cyandark3), var(--cyandark2), var(--cyandark3), var(--cyanmid2)) !important;
-  background-size: 300% !important;
-  background-position: left !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  transition: background-position 300ms ease-in-out !important;
-}
-
-.txtGradientAnim:hover {
-  background-position: right !important;
-} */
 
 .text-gradient {
   font-size: 2.25rem; 
@@ -246,7 +225,7 @@
 
 .gallery-items {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr)); /* Three items per row */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -258,25 +237,23 @@
 
 .gallery-item img {
   width: 100%;
-  height: auto; /* Adjusted to maintain aspect ratio */
+  height: auto;
   object-fit: cover;
-  /* border-radius: 1rem; */
   transition: transform 0.3s ease;
   transform: scale(1.01);
-  /* margin: 5px 10px 5px 10px; */
 }
 
 .gallery-item:hover img {
-  transform: scale(1.1); /* Scale effect on hover */
+  transform: scale(1.1);
 }
 
 h2 {
-  font-size: 1rem; /* Adjusted font size for better readability */
+  font-size: 1rem;
 }
 
 .filter-container button {
-  margin-right: 1rem; /* Reduced margin for better spacing */
-  margin-bottom: 1rem; /* Reduced margin for better spacing */
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   min-width: 5rem;
   padding: 0.5rem 1rem;
 
@@ -355,7 +332,7 @@ button.active {
 }
 
 .contact-form, .contact-info {
-  background-color: #1e1e1e; /* Dark background */
+  background-color: #1e1e1e;
   border-radius: 8px;
   padding: 20px;
 }
@@ -390,12 +367,12 @@ button.active {
 }
 
 .custom-select select {
-  display: none; /* Hide the original SELECT element */
+  display: none;
 }
 
 .select-selected {
-  background-color: var(--bgdark); /* Darker background */
-  color: var(--txtdark); /* White text color */
+  background-color: var(--bgdark);
+  color: var(--txtdark);
   padding: 10px;
   border: 1px solid var(--cyandark2);
   border-radius: 4px;
@@ -411,25 +388,25 @@ button.active {
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: var(--cyandark2) transparent transparent transparent; /* White arrow */
+  border-color: var(--cyandark2) transparent transparent transparent;
 }
 
 .select-selected.select-arrow-active:after {
-  border-color: transparent transparent var(--cyandark2) transparent; /* White arrow */
+  border-color: transparent transparent var(--cyandark2) transparent;
   top: 7px;
 }
 
 .select-items {
   position: absolute;
-  background-color: var(--bgdark); /* Darker background */
-  color: var(--txtdark); /* White text color */
+  background-color: var(--bgdark);
+  color: var(--txtdark);
   top: 100%;
   left: 0;
   right: 0;
   z-index: 99;
   border: 1px solid var(--cyandark2);
-  border-top: none; /* Remove top border to connect with the select-selected */
-  border-radius: 0 0 4px 4px; /* Rounded corners at the bottom */
+  border-top: none;
+  border-radius: 0 0 4px 4px; 
 }
 
 .select-hide {
@@ -448,10 +425,7 @@ button.active {
 
 .submit-button {
   display: block;
-  /* width: 100%; */
   padding: 15px;
-  /* background: linear-gradient(to right, #00BFFF, #1e90ff);
-  color: #ffffff; */
   font-weight: bold;
   text-align: center;
   border: none;
@@ -468,7 +442,6 @@ button.active {
   transition: all 0.1s ease-in-out;
   transform: scale(1.1);
 }
-
 
 .skills {
   overflow: hidden;
@@ -512,21 +485,17 @@ button.active {
   z-index: 1;
   font-weight: 500;
   font-size: 0.9rem;
-  /* color: var(--heading-color); */
 }
 
 .counter span {
   font-size: 1.45rem;
-  /* color: var(--heading-color); */
 }
 
 .sk-title {
-  /* color: var(--heading-color); */
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   bottom: 10%;
-  /* margin-top: 2rem; */
   font-weight: 500;
   font-size: 1rem;
 }
@@ -544,8 +513,6 @@ button.active {
 }
 
 .sk-progress svg circle {
-  /* fill: #2D263C;
-  stroke: #602CFB; */
   stroke-width: 7px;
   stroke-dasharray: 427;
   stroke-dashoffset: 427;
@@ -697,7 +664,6 @@ button.active {
 
   .navbar.scrolled {
     /* background: var(--bglight); */
-
   }
 }
 
