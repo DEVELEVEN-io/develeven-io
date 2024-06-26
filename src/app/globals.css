@@ -43,7 +43,11 @@
     @apply flex;
   }
 
-  /* for extra small devices */
+  .sk-progress {
+    @apply w-[150px] h-[150px] relative scale-[1] xl:scale-[1.2]
+  }
+
+  /* max-width: 372px START */
   @media (max-width: 372px) { 
     .hireBtn {
       padding: 8px 0 !important;
@@ -55,18 +59,51 @@
     .contact-form {
       padding: 24px 24px !important;
     }
+    
+    
+    .skills-wrap {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(1, 150px);
+    }
   }
+  /* max-width: 372px END */
 
+  /* max-width: 424px START */
+  @media (max-width: 424px) { 
+    .skills-wrap {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(2, 150px);
+    }
+  }
+  /* max-width: 424px END */
+
+
+  /* max-width: 576px START */
   @media (max-width: 576px) { 
-
+    .skills-wrap {
+      grid-template-columns: repeat(3, 150px);
+    }
   }
+  /* max-width: 576px END */
   
+
+
+  /* max-width: 768px START */
   @media (max-width: 768px) { 
     .achivement {
       @apply box-border w-1/2;
     }
+    /* .skills-wrap {
+      grid-template-columns: repeat(3, 150px);
+    } */
   }
+  /* max-width: 768px END */
+
+
   
+  /* max-width: 992px START */
   @media (max-width: 992px) {
     .nav-list {
       @apply flex-col fixed top-[4.5rem] left-0 w-full h-[140vh] bg-bglight z-50 hidden;
@@ -157,11 +194,24 @@
       flex-direction: row !important; 
       justify-content: left;
     }
+    /* .skills-wrap {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(3, 150px);
+    } */
   }
+    /* max-width: 992px END */
   
-  @media (min-width: 1200px) { 
-    
+  /* max-width: 1024px START */
+  @media (max-width: 1024px) { 
+    .skills-wrap {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(4, 150px);
+    }
   }
+  /* max-width: 1024px END */
+
 }
 
 .achivements {
