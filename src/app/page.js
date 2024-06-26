@@ -1,6 +1,6 @@
 "use client";
 // src/app/pages.js
-import { Header, Work, Services, Team, Navbar, Contact, Footer } from '../../components';
+import { Header, Work, Services, Team, Tech, Navbar, Contact, Footer } from '../../components';
 import { useEffect } from "react";
 
 export default function Home() {
@@ -25,6 +25,7 @@ export default function Home() {
       <Work />
       <Services />
       <Team />
+      <Tech />
       <Contact />
       <Footer />
     </div>

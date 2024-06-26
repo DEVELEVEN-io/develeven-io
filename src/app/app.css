@@ -110,7 +110,7 @@
 
 .nav-link a:hover {
   color: var(--cyanblue);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 
@@ -124,15 +124,21 @@
   padding-bottom: 5px; /* Adjust as needed */
 }
 
-.nav-link a.active::after {
+.nav-link a::after {
   content: '';
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 0; /* Initial width */
   height: 3px; /* Height of the gradient border */
   background: linear-gradient(90deg, var(--cyanblue) 1%, var(--cyandark2) 100%); /* Gradient colors */
+  transition: width 0.3s ease; /* Transition effect */
 }
+
+.nav-link a.active::after {
+  width: 100%; /* Full width on active */
+}
+
 
 
 .btn {

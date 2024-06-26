@@ -5,6 +5,6 @@ export { default as Services } from "./Services/Services";
 export { default as Team } from "./Team/Team";
 export { default as Footer } from "./Footer/Footer";
 export { default as Contact } from "./Contact/Contact";
+export { default as Tech } from "./Tech/Tech";
 // export { default as Skills } from "./Skills/Skills";
 // export { default as YouTube } from "./YouTube/YouTube";
-// export { default as Testimonials } from "./Testimonials/Testimonials";
