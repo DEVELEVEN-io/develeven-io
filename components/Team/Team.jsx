@@ -16,7 +16,7 @@ const Team = () => {
             <span className="memberName mb-1">Abid Al Wassie</span>
             <span className="memberTitle text-highlight my-0">Web Developer</span>
             <div className="memberDesc">
-              <p className="memberText">Abid Al Wassie is a Senior Developer at DevEleven-io. He is a Full-Stack Developer. He is the creator of <a className="text-cyanblue underline font-semibold" href="https://youtube.com/@oneManDev" target="_blank">oneManDev</a>.</p>
+              <p className="memberText">Abid Al Wassie is a Senior Developer at DevEleven-io. He&apos; a Full-Stack Developer. He is the creator of <a className="text-cyanblue underline font-semibold" href="https://youtube.com/@oneManDev" target="_blank">oneManDev</a>.</p>
               <ul className="memberLinks flex">
                 <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://abidalwassie.me" target="_blank"><FaGlobe /></a></li>
                 <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href="https://github.com/AbidAlWassie" target="_blank"><FaGithub /></a></li>
