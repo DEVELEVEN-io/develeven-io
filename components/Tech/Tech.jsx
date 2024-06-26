@@ -1,3 +1,6 @@
+// Tech.jsx
+"use client";
+import { useEffect, useState } from 'react';
 import { images } from '../../constants';
 import Image from 'next/image';
 
@@ -15,6 +18,61 @@ const skillsData = [
 ];
 
 const Tech = () => {
+  // Use useClient to ensure component is rendered on the client side
+
+  const [skillsPlayed, setSkillsPlayed] = useState(false);
+
+  useEffect(() => {
+    function handleScroll() {
+      const scrolled = window.scrollY;
+      const threshold = 1200;
+
+      if (!skillsPlayed && scrolled >= threshold) {
+        loadSkills();
+        setSkillsPlayed(true);
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [skillsPlayed]);
+
+  function loadSkills() {
+    const skCounters = document.querySelectorAll('.counter span');
+    const progressBars = document.querySelectorAll('.sk-progress svg circle');
+
+    skCounters.forEach((skCounter, index) => {
+      const cvalue = Number(skCounter.dataset.target);
+      let strokeValue = 427 - 427 * (cvalue / 100);
+
+      progressBars[index].style.animation = 'progress 2s ease-in-out forwards';
+      progressBars[index].style.setProperty('--target', strokeValue);
+
+      setTimeout(() => {
+        updateCount(skCounter, cvalue);
+      }, 400);
+    });
+
+    setTimeout(() => {
+      setSkillsPlayed(true);
+    }, 2000);
+  }
+
+  function updateCount(num, maxNum) {
+    let currentNum = +num.innerText;
+
+    if (currentNum < maxNum) {
+      num.innerText = currentNum + 1;
+      setTimeout(() => {
+        updateCount(num, maxNum);
+      }, 12);
+    }
+  }
+
   return (
     <section id="tech" className="container flex flex-col justify-between mx-auto mt-14 w-full">
       <h2 className="text-4xl font-bold text-gradient my-2">Technologies we use</h2>
@@ -28,7 +86,7 @@ const Tech = () => {
                 <circle className={skill.circleClass} cx={75} cy={75} r={68} />
               </svg>
               <div className="techLogo">
-                <Image loading="eager" src={skill.image} alt={`${skill.name} logo`} />
+                <Image loading="eager" src={skill.image} alt={`${skill.name} logo`} width={150} height={150} />
               </div>
               <h2 className="counter">
                 <span data-target={skill.proficiency}>0</span>%

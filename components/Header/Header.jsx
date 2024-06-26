@@ -1,13 +1,31 @@
-import React from 'react';
+"use client";
+import React, { useEffect, useState } from 'react';
 
 const Header = () => {
-  // Define achievement data
-  const achievements = [
-    { count: "4+", info: "Years of Experience" },
-    { count: "16+", info: "Projects Completed" },
-    { count: "25+", info: "Satisfied Clients" },
-    { count: "12+", info: "Client Reviews" },
+  // Define initial achievement data
+  const initialAchievements = [
+    { count: "0", info: "Years of Experience" },
+    { count: "0", info: "Projects Completed" },
+    { count: "0", info: "Satisfied Clients" },
+    { count: "0", info: "Client Reviews" },
   ];
+
+  // State to hold achievements data
+  const [achievements, setAchievements] = useState(initialAchievements);
+
+  // Effect to update achievement counts on page load
+  useEffect(() => {
+    // Update achievement counts based on some logic here
+    // For demonstration, we'll update them immediately
+    setAchievements([
+      { count: "4+", info: "Years of Experience" },
+      { count: "16+", info: "Projects Completed" },
+      { count: "25+", info: "Satisfied Clients" },
+      { count: "12+", info: "Client Reviews" },
+    ]);
+
+    // Cleanup function (not needed here since no event listeners are added)
+  }, []); // Empty dependency array ensures this effect runs only once on mount
 
   return (
     <header className="header container flex flex-col justify-between mx-auto mt-32 w-full">
@@ -21,19 +39,13 @@ const Header = () => {
         Get in Touch
       </button>
 
-      <div className="achivements flex flex-row">
+      {/* Achievements Section with added classes */}
+      <div className="achievements flex flex-row justify-around my-8">
         {/* Dynamically generate each achievement */}
         {achievements.map((achievement, index) => (
-          <div key={index} className="achivement mx-auto flex flex-row items-center">
-            <span className="bigGradient mx-4">{achievement.count}</span>
-            <span className="info">
-              {achievement.info.split("<br />").map((line, idx) => (
-                <React.Fragment key={idx}>
-                  {line}
-                  <br />
-                </React.Fragment>
-              ))}
-            </span>
+          <div key={index} className="ml flex flex-col items-center">
+            <span className="bigGradient">{achievement.count}</span>
+            <span className="info">{achievement.info}</span>
           </div>
         ))}
       </div>
