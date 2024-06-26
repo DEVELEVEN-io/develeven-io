@@ -3,14 +3,27 @@
 import { useState, useEffect } from 'react';
 import { images } from "../../constants";
 import Image from 'next/image';
-import { Link, Events, scrollSpy } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const handleMenuToggle = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const navLinks = [
     { to: 'work', offset: -250, label: 'Work' },
@@ -21,9 +34,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`navbar ${isOpen ? 'open' : ''}`} id='navbar'>
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'open' : ''}`} id='navbar'>
       <div className="container flex justify-between mx-auto text-center items-center">
-        <div className="navHolder flex py-4">
+        <div className="navHolder flex py-2">
           <div className='brand-logo flex items-center mr-4'>
             <Image src={images.logo} alt="Logo" width={40} height={40} />
             <span className="ml-2 text-highlight font-bold text-xl">DevEleven-io</span>
@@ -31,7 +44,7 @@ const Navbar = () => {
 
           <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
             {navLinks.map((link, index) => (
-              <li key={index} className='nav-link px-4 py-2'>
+              <li key={index} className='nav-link px-4 pt-2 pb-1'>
                 <Link
                   to={link.to}
                   activeClass="active"

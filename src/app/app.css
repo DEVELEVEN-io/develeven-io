@@ -50,6 +50,17 @@
   scrollbar-color: var(--cyanmid) var(--bglight);
 }
 
+/* Cursor Styles Start */
+.service-card {
+  cursor: context-menu;
+}
+
+.gallery div, .brand-logo {
+  cursor: pointer;
+}
+
+/* Cursor Styles End */
+
 
 /* Navbar.module.css */
 .navbar {
@@ -104,7 +115,9 @@
 
 .nav-link a {
   text-decoration: none;
-  padding: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  /* padding: 14px; */
   display: block;
 }
 
@@ -138,8 +151,6 @@
 .nav-link a.active::after {
   width: 100%; /* Full width on active */
 }
-
-
 
 .btn {
   width: 120px;
@@ -529,6 +540,15 @@ button.active {
   }
   .navbar.scrolled {
     top: 0px;
+  }
+
+  .navbar.open {
+    background: var(--bglight);
+  }
+
+  .navbar.scrolled {
+    /* background: var(--bglight); */
+
   }
 }
 
