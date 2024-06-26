@@ -555,8 +555,8 @@ button.active {
 }
 
 .p-circle8 {
-  fill: rgba(242, 145, 17, 0.2);
-  stroke: rgba(242, 145, 17, 0.9);
+  fill: rgba(42, 121, 167, 0.2);
+  stroke: rgba(42, 121, 167, 0.9);
 }
 
 .p-circle9 {
@@ -572,6 +572,16 @@ button.active {
 .p-circle11 {
   fill: rgba(242, 145, 17, 0.2);
   stroke: rgba(255, 203, 43, 0.9);
+}
+
+.p-circle12 {
+  fill: rgba(36, 211, 173, 0.2);
+  stroke: rgba(36, 211, 173, 0.9);
+}
+
+.p-circle13 {
+  fill: rgba(36, 211, 89, 0.2);
+  stroke: rgba(36, 211, 89, 0.9);
 }
 
 .p-circle101 {

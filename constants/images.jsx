@@ -15,6 +15,8 @@ import python from '../assets/icons/python.png';
 import typescript from '../assets/icons/typescript.png';
 import nextjs from '../assets/icons/nextjs.png';
 import firebase from '../assets/icons/firebase.png';
+import fastapi from '../assets/icons/fastapi.png';
+import mongodb from '../assets/icons/mongodb.png';
 // import cpp from '../assets/icons/cpp.png';
 // import flutter from '../assets/icons/flutter.png';
 // import graphql from '../assets/icons/graphql.png';
@@ -39,7 +41,9 @@ const data = {
   javascript,
   figma,
   git,
-  firebase
+  firebase,
+  fastapi, 
+  mongodb
 };
 
 export default data;
