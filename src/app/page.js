@@ -51,29 +51,29 @@ export default function Home() {
     }, 2000);
   }
 
-  // function mlCounter() {
-  //   const mlCounters = document.querySelectorAll(".number span");
+  function mlCounter() {
+    const mlCounters = document.querySelectorAll(".number span");
 
-  //   mlCounters.forEach((mlCounter) => {
-  //     const mvalue = Number(mlCounter.dataset.target);
-  //     setTimeout(() => {
-  //       updateCount(mlCounter, mvalue);
-  //     }, 1000);
-  //   });
+    mlCounters.forEach((mlCounter) => {
+      const mvalue = Number(mlCounter.dataset.target);
+      setTimeout(() => {
+        updateCount(mlCounter, mvalue);
+      }, 1000);
+    });
 
-  //   setMlPlayed(true);
-  // }
+    setMlPlayed(true);
+  }
 
-  // function updateCount(num, maxNum) {
-  //   let currentNum = +num.innerText;
+  function updateCount(num, maxNum) {
+    let currentNum = +num.innerText;
 
-  //   if (currentNum < maxNum) {
-  //     num.innerText = currentNum + 1;
-  //     setTimeout(() => {
-  //       updateCount(num, maxNum);
-  //     }, 12);
-  //   }
-  // }
+    if (currentNum < maxNum) {
+      num.innerText = currentNum + 1;
+      setTimeout(() => {
+        updateCount(num, maxNum);
+      }, 12);
+    }
+  }
 
   return (
     <div>
