@@ -82,7 +82,7 @@ export default function Home() {
       <Work />
       <Services />
       <Team />
-      <Tech />
+      {/* <Tech /> */}
       <Contact />
       <Footer />
     </div>
