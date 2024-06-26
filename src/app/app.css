@@ -469,6 +469,163 @@ button.active {
   transform: scale(1.1);
 }
 
+* Skills Styles */
+
+.skills {
+  overflow: hidden;
+}
+
+.skills-box {
+  background: var(--bglight);
+  /* padding: 5rem 6rem; */
+  border-radius: 20px;
+  width: 100%;
+}
+
+.box-desc {
+  display: flex;
+}
+
+.skills-wrap {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  justify-content: space-between;
+}
+
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+
+
+.techLogo {
+  width: 50px;
+  height: 50px;
+  z-index: 10 !important;
+  margin: auto;
+  position: relative;
+  top: 35%;
+}
+
+.counter {
+  position: absolute;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-weight: 500;
+  font-size: 0.9rem;
+  /* color: var(--heading-color); */
+}
+
+.counter span {
+  font-size: 1.45rem;
+  /* color: var(--heading-color); */
+}
+
+.sk-title {
+  /* color: var(--heading-color); */
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 10%;
+  /* margin-top: 2rem; */
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
+
+.sk-progress svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  z-index: -1;
+}
+
+.sk-progress svg circle {
+  /* fill: #2D263C;
+  stroke: #602CFB; */
+  stroke-width: 7px;
+  stroke-dasharray: 427;
+  stroke-dashoffset: 427;
+  stroke-linecap: round;
+}
+
+.p-circle1 {
+  fill: rgba(229, 76, 33, 0.2);
+  stroke: rgb(229, 76, 33, 0.7);
+}
+
+.p-circle2 {
+  fill: rgba(33, 141, 229, 0.2);
+  stroke: rgb(33, 141, 229, 0.7);
+}
+
+.p-circle3 {
+  fill: rgba(247, 223, 30, 0.2);
+  stroke: rgb(247, 223, 30, 0.7);
+}
+
+.p-circle4 {
+  fill: rgba(128, 222, 234, 0.2);
+  stroke: rgba(128, 222, 234, 0.9);
+}
+
+.p-circle5 {
+  fill: rgba(255, 45, 32, 0.2);
+  stroke: rgba(255, 45, 32, 0.9);
+}
+
+.p-circle6 {
+  fill: rgba(255, 255, 255, 0.3);
+  stroke: rgba(255, 255, 255, 0.9);
+}
+
+.p-circle7 {
+  fill: rgba(1, 181, 213, 0.2);
+  stroke: rgba(1, 181, 213, 0.9);
+}
+
+.p-circle8 {
+  fill: rgba(242, 145, 17, 0.2);
+  stroke: rgba(242, 145, 17, 0.9);
+}
+
+.p-circle9 {
+  fill: rgba(17, 208, 242, 0.2);
+  stroke: rgba(17, 208, 242, 0.9);
+}
+
+.p-circle10 {
+  fill: rgba(243, 81, 29, 0.2);
+  stroke: rgba(243, 81, 29, 0.9);
+}
+
+.p-circle11 {
+  fill: rgba(242, 145, 17, 0.2);
+  stroke: rgba(255, 203, 43, 0.9);
+}
+
+.p-circle101 {
+  fill: rgba(1, 181, 213, 0.2);
+  stroke: rgba(1, 181, 213, 0.9);
+}
+
+@keyframes progress {
+  to {
+    stroke-dashoffset: var(--target);
+  }
+}
+
 
 @media (max-width: 576px) { 
   .achivements {
