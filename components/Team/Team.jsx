@@ -19,7 +19,7 @@ const teamMembers = [
     name: "Ragib Al Asad",
     image: images.portrait_ragib_md,
     title: "Web Developer",
-    description: "Ragib Al Asad is a senior backend developer of DevEleven-io with 4+ years of experience. He is the founder of DevEleven. Holds strong understandings in backend web technology like FastAPI",
+    description: "Ragib Al Asad is a Senior Backend Developer at DevEleven-io and the founder of DevEleven. specializes in backend web technologies, particularly FastAPI and databases like MongoDB.",
     links: {
       website: "https://facebook.com/ragibalasad",
       github: "https://github.com/ragibalasad",
@@ -31,7 +31,7 @@ const teamMembers = [
     name: "Shihab Shahriar Rashu",
     image: images.portrait_rashu_md,
     title: "Web Developer",
-    description: "Shihab Shahriar Rashu is one of the team members of DevEleven-io. He is a web developer specializing in JavaScript and Python programming languages",
+    description: "Shihab Shahriar Rashu is a web developer at DevEleven-io. He's an integral part of the development team, with expertise in JavaScript and Python.",
     links: {
       website: "https://facebook.com/mdshihabshahriar.rashu",
       github: "https://github.com/muhammadshihab",
