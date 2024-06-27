@@ -74,7 +74,6 @@ const Team = () => {
               src={member.image}
               alt={member.name}
               width={297}
-              height={364.32}
               className="object-cover rounded-t-md rounded-l-md rounded-b-none"
               priority  // Add priority property here
             />
