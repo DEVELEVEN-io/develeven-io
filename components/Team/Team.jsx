@@ -80,7 +80,7 @@ const Team = () => {
             <div className="memberGradient absolute inset-0 rounded-t-md rounded-l-md rounded-b-none" />
             <div className="memberInfo flex flex-col mx-auto">
               <span className="memberName mb-1">{member.name}</span>
-              <span className="memberTitle text-highlight my-0">{member.title}</span>
+              <span className="memberTitle text-highlight mb-2">{member.title}</span>
               <div className="memberDesc">
                 <p className="memberText">{member.description}</p>
                 <ul className="memberLinks flex">
