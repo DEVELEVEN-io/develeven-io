@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
+import { Sora } from "next/font/google";
 import "./app.css";
 import "./globals.css";
 import Head from "next/head";
 
-const inter = Inter({ subsets: ["latin"] });
+const sora = Sora({ subsets: ["latin"] });
 
 export const metadata = {
   title: "DevEleven",
@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="logo_32.png" />
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={sora.className}>{children}</body>
     </html>
   );
 }
