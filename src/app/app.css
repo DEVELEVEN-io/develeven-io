@@ -284,10 +284,6 @@ button.active {
   backdrop-filter: blur(50px);
 }
 
-.memberCard:hover .memberDesc {
-  display: block;
-}
-
 .memberCard img {
   z-index: 2;
 }
@@ -323,7 +319,7 @@ button.active {
 }
 
 .memberDesc {
-  display: none;
+  display: block;
 }
 
 .container {
