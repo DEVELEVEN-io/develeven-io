@@ -1,6 +1,7 @@
 import { images } from "../../constants";
 import Image from 'next/image';
-import { FaLinkedin, FaGithub, FaYoutube, FaGlobe } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaYoutube, FaGlobe, FaFacebook, FaTelegram } from 'react-icons/fa';
+import React from "react";
 
 const teamMembers = [
   {
@@ -21,9 +22,9 @@ const teamMembers = [
     title: "Web Developer",
     description: "Ragib Al Asad is a Senior Backend Developer at DevEleven-io and the founder of DevEleven. specializes in backend web technologies, particularly FastAPI and databases like MongoDB.",
     links: {
-      website: "https://facebook.com/ragibalasad",
+      website: "https://ragibalasad.me",
       github: "https://github.com/ragibalasad",
-      youtube: "https://youtube.com/@ragibalasad",
+      facebook: "https://facebook.com/ragibalasad",
       linkedin: "https://www.linkedin.com/in/ragibalasad"
     }
   },
@@ -33,9 +34,8 @@ const teamMembers = [
     title: "Web Developer",
     description: "Shihab Shahriar Rashu is a web developer at DevEleven-io. He's an integral part of the development team, with expertise in JavaScript and Python.",
     links: {
-      website: "https://facebook.com/mdshihabshahriar.rashu",
+      facebook: "https://facebook.com/mdshihabshahriar.rashu",
       github: "https://github.com/muhammadshihab",
-      youtube: "https://youtube.com/",
       linkedin: "https://www.linkedin.com/"
     }
   },
@@ -45,12 +45,20 @@ const teamMembers = [
     title: "Web Developer",
     description: "Raiyan Takrim  is a frontend developer at DevEleven-io. He possesses expertise in HTML, CSS, JS, Python, React, etc.",
     links: {
-      website: "https://abidalwassie.me",
-      github: "https://github.com/AbidAlWassie",
-      youtube: "https://youtube.com/@oneManDev",
-      linkedin: "https://www.linkedin.com/in/abidalwassie"
+      facebook: "https://facebook.com/raiyan.takrim3",
+      github: "https://github.com/raiyan-takrim",
+      telegram: "https://t.me/raiyan_takrim"
     }
   }
+];
+
+const socialMedia = [
+  { name: 'website', icon: FaGlobe },
+  { name: 'github', icon: FaGithub },
+  { name: 'youtube', icon: FaYoutube },
+  { name: 'linkedin', icon: FaLinkedin },
+  { name: 'facebook', icon: FaFacebook },
+  { name: 'telegram', icon: FaTelegram },
 ];
 
 const Team = () => {
@@ -77,10 +85,16 @@ const Team = () => {
               <div className="memberDesc">
                 <p className="memberText">{member.description}</p>
                 <ul className="memberLinks flex">
-                  <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href={member.links.website} target="_blank" rel="noopener noreferrer"><FaGlobe /></a></li>
-                  <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href={member.links.github} target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
-                  <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href={member.links.youtube} target="_blank" rel="noopener noreferrer"><FaYoutube /></a></li>
-                  <li className="memberLink text-4xl mx-auto px-4 pb-4 pt-8"><a href={member.links.linkedin} target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
+                  {socialMedia.map((platform, i) => {
+                    const Icon = platform.icon;
+                    return member.links[platform.name] ? (
+                      <li key={i} className="memberLink text-4xl mx-auto px-4 pb-4 pt-8">
+                        <a href={member.links[platform.name]} target="_blank" rel="noopener noreferrer">
+                          <Icon />
+                        </a>
+                      </li>
+                    ) : null;
+                  })}
                 </ul>
               </div>
             </div>
