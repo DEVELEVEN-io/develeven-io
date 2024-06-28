@@ -14,7 +14,7 @@
   /* Global styles */
   .navbar {
     @apply flex fixed top-0 left-0 w-full shadow z-50;
-    transition: top 0.3s;
+    transition: 0.3s;
   }
 
   .navbar .container {
@@ -25,8 +25,12 @@
     @apply flex items-center;
   }
 
+  .nav-list {
+    @apply mr-14
+  }
+
   .nav-link {
-    @apply px-4 py-2;
+    @apply px-2 py-2;
   }
 
   .hamburger {
@@ -189,6 +193,15 @@
   }
 
   @media (max-width: 1024px) {
+    .nav-list {
+      font-size: 0.9rem !important;
+      @apply mx-0 px-0;
+    }
+
+    .nav-link {
+      @apply px-0 mx-0;
+    }
+
     .skills-wrap {
       gap: 1rem;
     }

@@ -63,14 +63,15 @@
   position: relative;
   z-index: 1000; 
   transition: top 0.3s;
+  background: rgb(5, 7, 9);
 }
 
 .navbar.sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #0e37477c;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: rgba(5, 7, 9, 0.5);
+  box-shadow: 0 2px 4px rgba(135, 80, 247, 0.2);
   -moz-backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -78,8 +79,8 @@
 
 .navbar.scrolled {
   position: fixed;
-  background: #0e37477c;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: rgba(5, 7, 9, 0.5);
+  box-shadow: 0 2px 4px rgba(135, 80, 247, 0.2);
   -moz-backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
