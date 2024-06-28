@@ -44,7 +44,7 @@ const Navbar = () => {
 
           <ul className={`nav-list ml-auto ${isOpen ? 'open' : ''}`}>
             {navLinks.map((link, index) => (
-              <li key={index} className='nav-link px-2 pt-2 pb-1'>
+              <li key={index} className='nav-link px-0 pt-2 pb-1 text-sm'>
                 <Link
                   to={link.to}
                   activeClass="active"
@@ -54,7 +54,7 @@ const Navbar = () => {
                   duration={500}
                   className="text-txtdark"
                 >
-                  {link.label}
+                  {link.label.toUpperCase()}
                 </Link>
               </li>
             ))}
