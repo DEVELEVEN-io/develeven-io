@@ -594,22 +594,6 @@ button.active {
 
 
 @media (max-width: 576px) { 
-  .achievements {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-  }
-  
-  .achievement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-    width: 25%;
-    margin: 10px 0;
-  }
-
   .memberCards {
     display: flex;
     flex-wrap: wrap;
@@ -626,6 +610,22 @@ button.active {
 }
 
 @media (max-width: 768px) { 
+  .achievements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  
+  .achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 25%;
+    margin: 10px 0;
+  }
+
   .service-card {
     position: relative;
     flex-wrap: wrap;
