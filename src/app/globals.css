@@ -41,9 +41,9 @@
     @apply block h-1 w-6 my-1 bg-txtdark;
   }
 
-  .navbar.open .nav-list {
+  /* .navbar.open .nav-list {
     @apply flex;
-  }
+  } */
 
   .skills-wrap {
     display: flex;
@@ -102,12 +102,7 @@
 
   @media (max-width: 992px) {
     .nav-list {
-      @apply flex-col fixed top-[4.5rem] right-0 h-[140vh] bg-bglight z-50 hidden;
-      width: 80%;
-    }
-  
-    .nav-list.open {
-      @apply flex;
+      @apply bg-bglight;
     }
   
     .nav-link {
@@ -159,7 +154,7 @@
       @apply relative;
     }
   
-    .navbar.open .nav-list {
+    .nav-list {
       @apply block;
     }
   

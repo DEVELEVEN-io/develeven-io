@@ -109,6 +109,7 @@
 }
 
 .nav-link a {
+  font-weight: 700;
   text-decoration: none;
   padding-left: 14px;
   padding-right: 14px;
@@ -663,6 +664,23 @@ button.active {
 }
 
 @media (max-width: 992px) {
+  .nav-list {
+    position: fixed;
+    top: 4.5rem;
+    right: -100%;
+    z-index: -50;
+    display: flex;
+    flex-direction: column;
+    height: 140vh;
+    width: 80%;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .nav-list.open {
+    height: 140vh;
+    right: 0;
+  }
+
   .hireBtn {
     width: 140px !important;
   }
@@ -672,6 +690,10 @@ button.active {
 
   .navbar.open {
     background: var(--bglight);
+  }
+  
+  .nav-list.open .navbar {
+    background: var(--bglight) !important;
   }
 
   .navbar.scrolled {
