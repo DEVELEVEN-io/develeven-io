@@ -15,7 +15,9 @@ const Navbar = () => {
 
   const handleLinkClick = () => {
     if (isOpen) {
-      setIsOpen(false);
+      setTimeout(() => {
+        setIsOpen(false);
+      }, 400);
     }
   };
 
