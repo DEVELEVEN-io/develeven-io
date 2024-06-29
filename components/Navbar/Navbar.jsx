@@ -13,6 +13,12 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleLinkClick = () => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -53,6 +59,7 @@ const Navbar = () => {
                   offset={link.offset}
                   duration={500}
                   className="text-txtdark"
+                  onClick={handleLinkClick}
                 >
                   {link.label.toUpperCase()}
                 </Link>
