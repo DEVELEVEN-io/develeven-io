@@ -30,9 +30,9 @@ const Header = () => {
         into Reality
       </h1>
       <p className="mb-4 font-medium">We build elegant websites at affordable prices.</p>
-        <button className="w-36 py-2 border-2 border-cyanmid text-cyanmid rounded-full my-4 hover:bg-cyanmid hover:text-ff transition">
-          Get in Touch
-        </button>
+      <button className="w-36 py-2 border-2 border-cyanmid text-cyanmid rounded-full my-4 hover:bg-cyanmid hover:text-ff transition">
+        Get in Touch
+      </button>
 
       <div className="achievements flex flex-row justify-around my-8">
         {achievements.map((achievement, index) => (

@@ -113,6 +113,7 @@ const Contact = () => {
             name="message"
             placeholder="Your message"
             className="form-input"
+            rows={7}
             required
           ></textarea>
           <input

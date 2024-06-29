@@ -137,7 +137,8 @@
   left: 0;
   bottom: 0;
   width: 0;
-  height: 3px;
+  height: 5px;
+  border-radius: 5px;
   background: linear-gradient(90deg, var(--cyanblue) 1%, var(--cyandark2) 100%);
   transition: width 0.3s ease;
 }
@@ -290,7 +291,7 @@ button.active {
 }
 
 .memberInfo {
-  background-color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(5, 7, 9, 0.5);;
   box-shadow: 0 0 15px 5px rgba(0, 39, 38, 0.2);
   opacity: 1;
   position: absolute;
@@ -358,7 +359,6 @@ button.active {
 
 .custom-select {
   position: relative;
-  font-family: Arial, sans-serif;
   margin-bottom: 15px;
   width: 100%;
 }
