@@ -59,7 +59,7 @@ const Navbar = () => {
                   offset={link.offset}
                   duration={500}
                   className="text-txtdark"
-                  onClick={handleLinkClick}
+                  onSetActive={handleLinkClick}
                 >
                   {link.label.toUpperCase()}
                 </Link>
