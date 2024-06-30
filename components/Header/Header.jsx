@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react';
+import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Header = () => {
 
@@ -30,9 +31,24 @@ const Header = () => {
         into Reality
       </h1>
       <p className="mb-4 font-medium">We build elegant websites at affordable prices.</p>
-      <button className="w-36 py-2 border-2 border-cyanmid text-cyanmid rounded-full my-4 mt-8 hover:bg-cyanmid hover:text-ff transition">
-        Get in Touch
-      </button>
+
+      <div className="no-name h-auto my-4 mt-8">
+        <ul className='flex gap-3'>
+          <button className="w-36 py-2 my-auto border-2 border-cyanmid text-cyanmid rounded-full hover:bg-cyanmid hover:text-ff transition">
+            Get in Touch
+          </button>
+          <li className='text-3xl text-cyanmid rounded-full my-auto hover:text-4xl hover:text-ff transition-all'>
+            <a href="" className=''><FaFacebook></FaFacebook></a>
+          </li>
+          <li className='text-3xl text-cyanmid rounded-full my-auto hover:text-4xl hover:text-ff transition-all'>
+            <a href="" className=''><FaLinkedin></FaLinkedin></a>
+          </li>
+          <li className='text-3xl text-cyanmid rounded-full my-auto hover:text-4xl hover:text-ff transition-all'>
+            <a href="" className=''><FaGithub></FaGithub></a>
+          </li>
+        </ul>
+
+      </div>
 
       <div className="achievements flex flex-row justify-around my-8">
         {achievements.map((achievement, index) => (
