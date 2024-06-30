@@ -38,13 +38,13 @@ const Header = () => {
             Get in Touch
           </button>
           <li className='text-3xl text-cyanmid rounded-full my-auto hover:text-4xl hover:text-ff transition-all'>
-            <a href="" className=''><FaFacebook></FaFacebook></a>
+            <a href="https://facebook.com/" target='_blank'><FaFacebook></FaFacebook></a>
           </li>
           <li className='text-3xl text-cyanmid rounded-full my-auto hover:text-4xl hover:text-ff transition-all'>
-            <a href="" className=''><FaLinkedin></FaLinkedin></a>
+            <a href="https://linkedin.com/" target='_blank'><FaLinkedin></FaLinkedin></a>
           </li>
           <li className='text-3xl text-cyanmid rounded-full my-auto hover:text-4xl hover:text-ff transition-all'>
-            <a href="" className=''><FaGithub></FaGithub></a>
+            <a href="https://github.com/DEVELEVEN-io/" target='_blank'><FaGithub></FaGithub></a>
           </li>
         </ul>
 
