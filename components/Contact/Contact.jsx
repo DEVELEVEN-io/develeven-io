@@ -100,7 +100,7 @@ const Contact = () => {
             placeholder="Email address"
             required
           />
-          <div className="custom-select text-sm" style={{ width: "100%" }}>
+          <div className="custom-select" style={{ width: "100%" }}>
             <select name="serviceType" id="serviceType">
               <option value="">--Please choose an option--</option>
               <option value="website">Website</option>
@@ -113,7 +113,7 @@ const Contact = () => {
             name="message"
             placeholder="Your message"
             className="form-input"
-            rows={10}
+            rows={7}
             required
           ></textarea>
           <input
