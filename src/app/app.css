@@ -344,12 +344,9 @@ button.active {
 }
 
 .form-input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
+  @apply w-full text-sm p-4 mb-4;
   background-color: var(--bgdark);
-  border: 1px solid var(--cyandark2);
-  border-radius: 4px;
+  border-radius: 10px;
   outline: none;
 }
 
@@ -368,11 +365,10 @@ button.active {
 }
 
 .select-selected {
+  @apply text-sm p-4;
   background-color: var(--bgdark);
   color: var(--txtdark);
-  padding: 10px;
-  border: 1px solid var(--cyandark2);
-  border-radius: 4px;
+  border-radius: 10px;
   cursor: pointer;
   user-select: none;
 }
@@ -395,15 +391,16 @@ button.active {
 
 .select-items {
   position: absolute;
-  background-color: var(--bgdark);
+  background-color: (var(--bgdark) 0);
   color: var(--txtdark);
   top: 100%;
   left: 0;
   right: 0;
   z-index: 99;
-  border: 1px solid var(--cyandark2);
   border-top: none;
   border-radius: 0 0 4px 4px; 
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .select-hide {
@@ -414,10 +411,12 @@ button.active {
   padding: 10px;
   cursor: pointer;
   user-select: none;
+  transition: 0.3s ease-in-out;
 }
 
 .select-items div:hover, .same-as-selected {
   background-color: var(--bglight);
+  backdrop-filter: blur(10px);
 }
 
 .submit-button {
