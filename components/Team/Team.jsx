@@ -20,7 +20,7 @@ const teamMembers = [
     name: "Ragib Al Asad",
     image: images.portrait_ragib_md,
     title: "Web Developer",
-    description: "Ragib Al Asad is a Senior Backend Developer at DevEleven-io and the founder of DevEleven. specializes in backend web technologies, particularly FastAPI and databases like MongoDB.",
+    description: "Founder of DevEleven. Senior Backend Developer at DevEleven-io with terrible frontend skills.",
     links: {
       website: "https://ragibalasad.me",
       github: "https://github.com/ragibalasad",
