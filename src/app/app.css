@@ -352,11 +352,29 @@ button.active {
   border: 1px solid var(--cyandark2);
   border-radius: 4px;
   outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.form-input:focus {
+.form-input:focus,
+.form-input:focus-visible {
   border-color: var(--cyandark);
+  -webkit-box-shadow: 0 0 5px var(--cyandark2);
+  -moz-box-shadow: 0 0 5px var(--cyandark2);
+  box-shadow: 0 0 5px var(--cyandark2);
+  outline: none;
 }
+
+.form-input:focus::-moz-placeholder,
+.form-input:focus:-ms-input-placeholder,
+.form-input:focus::placeholder {
+  color: var(--cyandark);
+  opacity: 1;
+}
+
+.form-input:-moz-focusring {
+  outline: none;
+}
+
 
 .custom-select {
   position: relative;
@@ -387,6 +405,10 @@ button.active {
   height: 0;
   border: 6px solid transparent;
   border-color: var(--cyandark2) transparent transparent transparent;
+}
+
+.select-selected.select-arrow-active {
+  border-color: var(--cyandark) !important;
 }
 
 .select-selected.select-arrow-active:after {
