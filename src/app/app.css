@@ -16,7 +16,6 @@
   --cyandark3: #008c9e;
   --bgdark: #071115;
   --bglight: #0B1B22;
-  --txtdark: #DCF0F1;
 }
 
 
@@ -274,6 +273,11 @@ button.active {
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  transition: all .3s ease-in-out;
+}
+
+.memberCard:hover {
+  box-shadow: 0px 0px 1px .3px var(--cyandark);
 }
 
 .memberCard:hover .memberInfo {
