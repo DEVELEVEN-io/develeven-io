@@ -25,12 +25,12 @@ const Header = () => {
   return (
     <header className="header container flex flex-col justify-between mx-auto mt-32 w-full">
       <h2 className="text-3xl font-bold text-cyanblue mt-2">DevEleven</h2>
-      <h1 className="text-7xl font-bold text-gradient my-4">
+      <h1 className="text-7xl font-bold text-gradient my-2">
         Turning Ideas <br />
         into Reality
       </h1>
       <p className="mb-4 font-medium">We build elegant websites at affordable prices.</p>
-      <button className="w-36 py-2 border-2 border-cyanmid text-cyanmid rounded-full my-4 hover:bg-cyanmid hover:text-ff transition">
+      <button className="w-36 py-2 border-2 border-cyanmid text-cyanmid rounded-full my-4 mt-8 hover:bg-cyanmid hover:text-ff transition">
         Get in Touch
       </button>
 

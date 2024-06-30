@@ -14,7 +14,7 @@ const Services = () => {
             <h3 className="text-3xl font-bold text-txtdark my-2 mx-4">Frontend Development</h3>
           </div>
           <p className="my-4">
-            Our frontend development team creates visually stunning and highly interactive user interfaces that provide seamless user experiences across all devices. We ensure your web applications look great and perform flawlessly.
+            Our Frontend Development service focuses on crafting intuitive and responsive user interfaces. We use the latest technologies to ensure your website is fast, interactive, and visually appealing, providing an exceptional user experience on any device.
           </p>
           <div className="service-arrow text-2xl ml-auto">
             <FaLongArrowAltRight />
@@ -27,7 +27,7 @@ const Services = () => {
             <h3 className="text-3xl font-bold text-txtdark my-2 mx-4">Backend Development</h3>
           </div>
           <p className="my-4">
-            Our backend development team builds robust and scalable server-side applications. We handle everything from database management to server-side logic, ensuring your web applications are reliable and secure.
+            Our Backend Development service ensures your website functions seamlessly behind the scenes. We build robust and scalable server-side applications, manage databases, and implement secure authentication and authorization mechanisms to support your business operations.
           </p>
           <div className="service-arrow text-2xl ml-auto">
             <FaLongArrowAltRight />
@@ -40,7 +40,7 @@ const Services = () => {
             <h3 className="text-3xl font-bold text-txtdark my-2 mx-4">API Development</h3>
           </div>
           <p className="my-4">
-            We design and implement APIs that are scalable, well-documented, and easy to integrate, enabling seamless data exchange and functionality extension across different platforms.
+            Our API Development service allows your applications to communicate efficiently and securely. We design and implement APIs that are scalable, well-documented, and easy to integrate, enabling seamless data exchange and functionality extension across different platforms.
           </p>
           <div className="service-arrow text-2xl ml-auto">
             <FaLongArrowAltRight />
