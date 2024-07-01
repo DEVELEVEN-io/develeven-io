@@ -204,3 +204,21 @@
   }
 
 }
+
+@media (min-width: 1440px) {
+  .header {
+    @apply pt-14;
+  }
+
+  .header h1 {
+    @apply my-3
+  }
+
+  .header .no-name {
+    @apply my-14;
+  }
+
+  .achievements {
+    @apply my-10;
+  }
+}
