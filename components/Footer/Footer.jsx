@@ -37,7 +37,8 @@ const Footer = () => {
               color="blue-gray"
               className="font-normal"
             >
-              Contribute
+              <a href="https://github.com/DEVELEVEN-io/develeven-io" target="_blank">Contribute</a>
+              
             </div>
           </li>
           <li>
