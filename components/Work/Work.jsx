@@ -19,7 +19,7 @@ const Work = () => {
   };
 
   return (
-    <section id="work" className="container flex flex-col justify-between mx-auto mt-14 w-full text-center">
+    <section id="work" className="work container flex flex-col justify-between mx-auto mt-14 w-full text-center">
       <h2 className="text-4xl font-bold my-4 textGradient2">Our Top Projects</h2>
 
       <div className="row flex flex-col">

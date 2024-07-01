@@ -63,7 +63,7 @@ const socialMedia = [
 
 const Team = () => {
   return (
-    <section id="team" className="container flex flex-col justify-between mx-auto mt-14 w-full">
+    <section id="team" className="team container flex flex-col justify-between mx-auto mt-14 w-full">
       <h2 className="text-4xl font-bold text-gradient my-2">Our Team</h2>
       <p className="my-4">We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.</p>
 
@@ -75,7 +75,7 @@ const Team = () => {
               alt={member.name}
               width={297}
               className="object-cover rounded-t-md rounded-l-md rounded-b-none"
-              priority  // Add priority property here
+              priority
             />
             <div className="memberGradient absolute inset-0 rounded-t-md rounded-l-md rounded-b-none" />
             <div className="memberInfo flex flex-col mx-auto">
