@@ -1,6 +1,5 @@
-<svg width="800" height="676" viewBox="0 0 800 676" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1044" height="1044" viewBox="0 0 1044 1044" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Define the filter for glowing effect -->
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" />
       <feFlood flood-color="#0998A0" result="glowColor" />
@@ -11,18 +10,16 @@
       </feMerge>
     </filter>
   </defs>
-
-  <g clip-path="url(#clip0_1_7)">
-    <path d="M323.947 607.985L261.205 544.887L363.545 442.522L426.289 505.619L323.947 607.985Z" stroke="#01C8D4" stroke-width="12" filter="url(#glow)"/>
-    <path d="M282.739 360.663L179.707 463.724L109.89 393.565L161.417 342.024L212.921 290.505L282.739 360.663Z" stroke="#01C8D4" stroke-width="12" filter="url(#glow)"/>
-    <path d="M249.859 51.2164C306.503 -5.49359 397.479 -6.87903 455.8 47.0601L109.946 393.315L9.05235 292.304L249.859 51.2164Z" stroke="#01C8D4" stroke-width="12" filter="url(#glow)"/>
-    <path d="M475.973 68.4674L688.586 281.443L587.7 382.412L375.086 169.436L475.973 68.4674Z" stroke="#01C8D4" stroke-width="12" filter="url(#glow)"/>
-    <path d="M549.415 623.433C492.771 680.144 401.798 681.529 343.476 627.59L688.988 281.673L789.883 382.684L549.415 623.433Z" stroke="#01C8D4" stroke-width="12" filter="url(#glow)"/>
-    <path d="M261.014 545.047L179.879 463.831L385.466 257.972L414.823 287.359C443.962 316.53 446.031 359.779 421.808 384.035L261.014 545.047Z" stroke="#01C8D4" stroke-width="12" filter="url(#glow)"/>
+  
+  <g clip-path="url(#clip0_1_2)">
+    <path d="M277.155 660.975L277.407 569.993L422.155 569.975L421.905 660.957L277.155 660.975Z" stroke="#0998A0" stroke-width="12" filter="url(#glow)" />
+    <path d="M422.9 454.954L277.17 454.974L277.412 355.996L350.292 355.986L423.14 355.976L422.9 454.954Z" stroke="#0998A0" stroke-width="12" filter="url(#glow)" />
+    <path d="M618.461 212.892C698.615 212.845 763.924 276.196 767.023 355.576L277.628 355.859L277.711 213.091L618.461 212.892Z" stroke="#0998A0" stroke-width="12" filter="url(#glow)" />
+    <path d="M766.15 384.978L765.894 685.914L623.16 685.973L623.417 385.036L766.15 384.978Z" stroke="#0998A0" stroke-width="12" filter="url(#glow)" />
+    <path d="M425.661 829.329C345.508 829.376 280.2 766.028 277.102 686.647L766.016 686.361L765.934 829.13L425.661 829.329Z" stroke="#0998A0" stroke-width="12" filter="url(#glow)" />
+    <path d="M277.158 569.971L277.216 455.172L568.152 454.979L568.131 496.518C568.108 537.75 538.99 569.794 504.709 569.817L277.158 569.971Z" stroke="#0998A0" stroke-width="12" filter="url(#glow)" />
   </g>
+  
   <defs>
-    <clipPath id="clip0_1_7">
-    <rect width="800" height="675.11" fill="white"/>
-    </clipPath>
   </defs>
 </svg>
