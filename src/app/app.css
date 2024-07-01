@@ -243,11 +243,24 @@ body {
 .work {
   position: relative;
 }
+.services {
+  position: relative;
+}
+.team {
+  position: relative;
+}
+.tech {
+  position: relative;
+}
+
+.contact {
+  position: relative;
+}
 
 .work:before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: -150%;
   right: 45%;
   width: 250px;
   height: 250px;
@@ -256,18 +269,16 @@ body {
   background: var(--cyanblue);
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
   filter: blur(100px);
-  transform: translate(0%, -100%);
+  animation: moveGradient 8s ease-in-out infinite;
   z-index: -100;
 }
 
-.services {
-  position: relative;
-}
+
 
 .services:before {
   content: "";
   position: absolute;
-  top: 80%;
+  top: -200%;
   right: 45%;
   width: 400px;
   height: 400px;
@@ -277,17 +288,15 @@ body {
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
   filter: blur(100px);
   transform: translate(0%, -100%);
+  animation: moveGradient 8s ease-in-out infinite;
   z-index: -100;
 }
 
-.team {
-  position: relative;
-}
 
 .team:before {
   content: "";
   position: absolute;
-  top: 90%;
+  top: -200%;
   right: 45%;
   width: 350px;
   height: 350px;
@@ -297,17 +306,15 @@ body {
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
   filter: blur(100px);
   transform: translate(0%, -100%);
+  animation: moveGradient 8s ease-in-out infinite;
   z-index: -100;
 }
 
-.tech {
-  position: relative;
-}
 
 .tech:before {
   content: "";
   position: absolute;
-  top: 90%;
+  top: -200%;
   right: 40%;
   width: 400px;
   height: 400px;
@@ -317,7 +324,34 @@ body {
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
   filter: blur(150px);
   transform: translate(0%, -100%);
+  animation: moveGradient 8s ease-in-out infinite;
   z-index: -100;
+}
+
+.contact:before {
+  content: "";
+  position: absolute;
+  top: -200%;
+  right: 40%;
+  width: 400px;
+  height: 400px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background: var(--cyanblue);
+  background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
+  filter: blur(150px);
+  transform: translate(0%, -100%);
+  animation: moveGradient 8s ease-in-out infinite;
+  z-index: -100;
+}
+
+@keyframes moveGradient {
+  0%, 100% {
+    transform: translate(0%, 400%);
+  }
+  50% {
+    transform: translate(0%, 300%);
+  }
 }
 
 .gallery {
