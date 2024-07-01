@@ -233,8 +233,7 @@ body {
   border-radius: 50%;
   right: -5%;
   position: relative;
-  /* overflow: hidden; */
-  animation: spin 4s linear infinite;
+  animation: spin 7s linear infinite;
 }
 
 @keyframes spin {
