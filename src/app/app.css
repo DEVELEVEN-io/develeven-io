@@ -239,19 +239,10 @@ body {
 
 @keyframes spin {
   0%, 100% {
-    transform: rotate(-15deg) translate(5px, 5px) scale(1); /* Adjust translate values */
+    transform: rotate(-35deg) translate(5px, 5px) scale(1);
   }
   50% {
-    transform: rotate(-20deg) translate(20px, 20px) scale(1.2); /* Adjust translate values */
-  }
-}
-
-@keyframes spin {
-  0%, 100% {
-    transform: rotate(-15deg) translate(5px, 5px) scale(1);
-  }
-  50% {
-    transform: rotate(10deg) translate(15px, 15px) scale(1.2);
+    transform: rotate(-20deg) translate(20px, 20px) scale(1.2);
   }
 }
 
