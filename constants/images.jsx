@@ -17,6 +17,7 @@ import nextjs from '../assets/icons/nextjs.png';
 import firebase from '../assets/icons/firebase.png';
 import fastapi from '../assets/icons/fastapi.png';
 import mongodb from '../assets/icons/mongodb.png';
+import logo_outlined from '../assets/icons/logo_outlined.svg';
 // import cpp from '../assets/icons/cpp.png';
 // import flutter from '../assets/icons/flutter.png';
 // import graphql from '../assets/icons/graphql.png';
@@ -43,7 +44,8 @@ const data = {
   git,
   firebase,
   fastapi, 
-  mongodb
+  mongodb,
+  logo_outlined
 };
 
 export default data;
