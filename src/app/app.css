@@ -233,17 +233,54 @@ body {
   border-radius: 50%;
   right: -10%;
   position: relative;
-  animation: spin 7s linear infinite;
+  animation: spin 12s linear infinite;
 }
 
 @keyframes spin {
   0%, 100% {
-    transform: rotate(-35deg) translate(5px, 5px) scale(1);
+    transform: rotate(-35deg) translate(5px, 5px) scale(.9);
+    opacity: 0.1;
   }
   50% {
-    transform: rotate(-20deg) translate(20px, 20px) scale(1.2);
+    transform: rotate(-20deg) translate(20px, 20px) scale(1.1);
+    opacity: 0.3;
   }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+.gallery div {
+  animation: fadeIn 0.5s ease-in-out;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.gallery div.fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
 
 .header:before {
   content: "";

@@ -1,10 +1,9 @@
 import React from "react";
-import Image from "next/image"; // Importing next/image for optimized image rendering
+import Image from "next/image";
 
 const Gallery = ({ gallery }) => {
-  // Check if gallery or gallery.src is undefined
   if (!gallery || !gallery.src) {
-    return null; // or handle the case appropriately
+    return null;
   }
 
   return (

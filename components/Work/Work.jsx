@@ -2,7 +2,7 @@
 
 import Gallery from "@/app/components/Gallery";
 import Filter from "@/app/components/Filter";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import gallery from "../../constants/gallery";
 
 const Work = () => {
