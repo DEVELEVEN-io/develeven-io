@@ -269,18 +269,18 @@ body {
   }
 }
 
-.gallery div {
-  animation: fadeIn 0.5s ease-in-out;
+.gallery-item {
   opacity: 1;
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  transition: opacity 0.25s ease-in-out, transform 0.3s ease-in-out;
 }
 
-.gallery div.fade-out {
-  animation: fadeOut 0.5s ease-in-out;
+.galleryHide {
   opacity: 0;
   transform: translateY(20px);
+  pointer-events: none;
+  /* width: 0 !important; */
+  /* height: 0; */
 }
-
 
 .header:before {
   content: "";

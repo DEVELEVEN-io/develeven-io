@@ -22,14 +22,14 @@ const Filter = ({ setActiveCategory, activeCategory, setFiltered, data }) => {
         All
       </button>
       <button
-        className={activeCategory === "websites" ? "active" : ""}
-        onClick={() => setActiveCategory("websites")}
+        className={activeCategory === "website" ? "active" : ""}
+        onClick={() => setActiveCategory("website")}
       >
         Websites
       </button>
       <button
-        className={activeCategory === "apps" ? "active" : ""}
-        onClick={() => setActiveCategory("apps")}
+        className={activeCategory === "app" ? "active" : ""}
+        onClick={() => setActiveCategory("app")}
       >
         Apps
       </button>
