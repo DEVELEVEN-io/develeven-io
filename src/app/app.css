@@ -238,11 +238,11 @@ body {
 
 @keyframes spin {
   0%, 100% {
-    transform: rotate(-35deg) translate(5px, 5px) scale(.9);
+    transform: rotate(-40deg) translate(5px, 5px) scale(.9);
     opacity: 0.1;
   }
   50% {
-    transform: rotate(-20deg) translate(20px, 20px) scale(1.1);
+    transform: rotate(-30deg) translate(20px, 20px) scale(1.1);
     opacity: 0.3;
   }
 }
@@ -295,6 +295,24 @@ body {
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
   filter: blur(150px);
   transform: translate(-0%, -50%);
+  /* animation: scaleGradient 4s ease-in-out infinite; */
+  z-index: -100;
+}
+
+.headerInfo:before {
+  content: "";
+  position: absolute;
+  top: 23%;
+  right: 46%;
+  width: 220px;
+  height: 220px;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  background: var(--cyanblue);
+  background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
+  filter: blur(120px);
+  transform: translate(-0%, -50%);
+  animation: scaleGradient 12s ease-in-out infinite;
   z-index: -100;
 }
 
@@ -318,7 +336,7 @@ body {
 .work:before {
   content: "";
   position: absolute;
-  top: -150%;
+  top: 20%;
   right: 45%;
   width: 250px;
   height: 250px;
@@ -327,16 +345,15 @@ body {
   background: var(--cyanblue);
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
   filter: blur(100px);
-  animation: moveGradient 8s ease-in-out infinite;
+  animation: scaleGradient 4s ease-in-out infinite;
   z-index: -100;
 }
-
 
 
 .services:before {
   content: "";
   position: absolute;
-  top: -200%;
+  top: 30%;
   right: 45%;
   width: 400px;
   height: 400px;
@@ -346,7 +363,7 @@ body {
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
   filter: blur(100px);
   transform: translate(0%, -100%);
-  animation: moveGradient 8s ease-in-out infinite;
+  animation: scaleGradient 8s ease-in-out infinite;
   z-index: -100;
 }
 
@@ -354,7 +371,7 @@ body {
 .team:before {
   content: "";
   position: absolute;
-  top: -200%;
+  top: 20%;
   right: 45%;
   width: 350px;
   height: 350px;
@@ -362,9 +379,9 @@ body {
   border-bottom-right-radius: 50%;
   background: var(--cyanblue);
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
-  filter: blur(100px);
+  filter: blur(150px);
   transform: translate(0%, -100%);
-  animation: moveGradient 8s ease-in-out infinite;
+  animation: moveGradientH 16s ease-in-out infinite;
   z-index: -100;
 }
 
@@ -382,28 +399,28 @@ body {
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
   filter: blur(150px);
   transform: translate(0%, -100%);
-  animation: moveGradient 8s ease-in-out infinite;
+  animation: moveGradientV 8s ease-in-out infinite;
   z-index: -100;
 }
 
 .contact:before {
   content: "";
   position: absolute;
-  top: -200%;
-  right: 40%;
-  width: 400px;
-  height: 400px;
+  top: 20%;
+  right: 20%;
+  width: 80%;
+  height: 300px;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   background: var(--cyanblue);
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
   filter: blur(150px);
   transform: translate(0%, -100%);
-  animation: moveGradient 8s ease-in-out infinite;
+  animation: scaleGradient 8s ease-in-out infinite;
   z-index: -100;
 }
 
-@keyframes moveGradient {
+@keyframes moveGradientV {
   0%, 100% {
     transform: translate(0%, 400%);
   }
@@ -411,6 +428,34 @@ body {
     transform: translate(0%, 300%);
   }
 }
+
+@keyframes moveGradientH {
+  0%, 100% {
+    transform: translate(90%, 0%);
+  }
+  50% {
+    transform: translate(-90%, 0%);
+  }
+}
+
+@keyframes scaleGradient {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+}
+
+@keyframes scaleGradient2 {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.8);
+  }
+}
+
 
 .gallery {
   display: flex;
@@ -923,6 +968,46 @@ button.active {
 }
 
 @media (max-width: 1024px) {
+  .tech:before {
+    top: 0% !important;
+    right: 30% !important;
+  }
+
+  @keyframes moveGradientV {
+    0%, 100% {
+      transform: translate(0%, 50%);
+    }
+    50% {
+      transform: translate(0%, 200%);
+    }
+  }
+  
+  @keyframes moveGradientH {
+    0%, 100% {
+      transform: translate(0%, 90%);
+    }
+    50% {
+      transform: translate(0%, -90%);
+    }
+  }
+  
+  @keyframes scaleGradient {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.4);
+    }
+  }
+  
+  @keyframes scaleGradient2 {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.8);
+    }
+  }
   
 }
 
