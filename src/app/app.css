@@ -293,6 +293,10 @@ body {
   border-bottom-right-radius: 50%;
   background: var(--cyanblue);
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
+    -webkit-filter: blur(150px);
+  -moz-filter: blur(150px);
+  -ms-filter: blur(150px);
+  -o-filter: blur(150px);
   filter: blur(150px);
   transform: translate(-0%, -50%);
   /* animation: scaleGradient 4s ease-in-out infinite; */
@@ -310,6 +314,10 @@ body {
   border-bottom-right-radius: 50%;
   background: var(--cyanblue);
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
+  -webkit-filter: blur(120px);
+  -moz-filter: blur(120px);
+  -ms-filter: blur(120px);
+  -o-filter: blur(120px);
   filter: blur(120px);
   transform: translate(-0%, -50%);
   animation: scaleGradient 12s ease-in-out infinite;
@@ -344,6 +352,10 @@ body {
   border-bottom-right-radius: 50%;
   background: var(--cyanblue);
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
+    -webkit-filter: blur(150px);
+  -moz-filter: blur(150px);
+  -ms-filter: blur(150px);
+  -o-filter: blur(150px);
   filter: blur(100px);
   animation: scaleGradient 4s ease-in-out infinite;
   z-index: -100;
@@ -361,6 +373,10 @@ body {
   border-bottom-right-radius: 50%;
   background: var(--cyanblue);
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
+    -webkit-filter: blur(150px);
+  -moz-filter: blur(150px);
+  -ms-filter: blur(150px);
+  -o-filter: blur(150px);
   filter: blur(100px);
   transform: translate(0%, -100%);
   animation: scaleGradient 8s ease-in-out infinite;
@@ -379,6 +395,10 @@ body {
   border-bottom-right-radius: 50%;
   background: var(--cyanblue);
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
+    -webkit-filter: blur(150px);
+  -moz-filter: blur(150px);
+  -ms-filter: blur(150px);
+  -o-filter: blur(150px);
   filter: blur(150px);
   transform: translate(0%, -100%);
   animation: moveGradientH 16s ease-in-out infinite;
@@ -397,6 +417,10 @@ body {
   border-bottom-right-radius: 50%;
   background: var(--cyanblue);
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
+    -webkit-filter: blur(150px);
+  -moz-filter: blur(150px);
+  -ms-filter: blur(150px);
+  -o-filter: blur(150px);
   filter: blur(150px);
   transform: translate(0%, -100%);
   animation: moveGradientV 8s ease-in-out infinite;
@@ -414,6 +438,10 @@ body {
   border-bottom-right-radius: 50%;
   background: var(--cyanblue);
   background: linear-gradient(260deg, var(--cyanblue) 0%, rgba(67, 189, 210, 0) 100%);
+    -webkit-filter: blur(150px);
+  -moz-filter: blur(150px);
+  -ms-filter: blur(150px);
+  -o-filter: blur(150px);
   filter: blur(150px);
   transform: translate(0%, -100%);
   animation: scaleGradient 8s ease-in-out infinite;
