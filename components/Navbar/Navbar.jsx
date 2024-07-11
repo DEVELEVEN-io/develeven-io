@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { images } from "../../constants";
-import Image from 'next/image';
-import { Link } from 'react-scroll';
+import Image from "next/image";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,33 +26,48 @@ const Navbar = () => {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const navLinks = [
-    { to: 'work', offset: -100, label: 'Work' },
-    { to: 'services', offset: -100, label: 'Services' },
-    { to: 'team', offset: -100, label: 'Team' },
-    { to: 'tech', offset: -100, label: 'Tech' },
-    { to: 'contact', offset: -100, label: 'Contact' },
+    { to: "work", offset: -100, label: "Work" },
+    { to: "services", offset: -100, label: "Services" },
+    { to: "team", offset: -100, label: "Team" },
+    { to: "tech", offset: -100, label: "Tech" },
+    { to: "contact", offset: -100, label: "Contact" },
   ];
 
   return (
-    <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isOpen ? 'open' : ''}`} id='navbar'>
+    <nav
+      className={`navbar ${isScrolled ? "scrolled" : ""} ${
+        isOpen ? "open" : ""
+      }`}
+      id="navbar"
+    >
       <div className="container flex justify-between mx-auto text-center items-center">
         <div className="navHolder flex py-2">
-          <div className='brand-logo flex items-center mr-4'>
-            <Image src={images.logo} alt="Logo" width={40} height={40} />
-            <span className="ml-2 text-highlight font-bold text-xl">DevEleven-io</span>
+          <div className="brand-logo mr-4">
+            <Link
+              to="header"
+              smooth={true}
+              offset={-200}
+              duration={500}
+              className="flex items-center"
+            >
+              <Image src={images.logo} alt="Logo" width={40} height={40} />
+              <span className="ml-2 text-highlight font-bold text-xl">
+                DevEleven-io
+              </span>
+            </Link>
           </div>
 
-          <ul className={`nav-list ml-auto ${isOpen ? 'open' : ''}`}>
+          <ul className={`nav-list ml-auto ${isOpen ? "open" : ""}`}>
             {navLinks.map((link, index) => (
-              <li key={index} className='nav-link px-0 pt-2 pb-1 text-sm'>
+              <li key={index} className="nav-link px-0 pt-2 pb-1 text-sm">
                 <Link
                   to={link.to}
                   activeClass="active"
@@ -74,7 +89,7 @@ const Navbar = () => {
           Hire Us!
         </button>
 
-        <div className='menuBtn hamburger' onClick={handleMenuToggle}>
+        <div className="menuBtn hamburger" onClick={handleMenuToggle}>
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>
