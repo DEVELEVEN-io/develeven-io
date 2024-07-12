@@ -9,12 +9,14 @@ const skillsData = [
   { name: 'JavaScript', proficiency: 90, image: images.javascript, circleClass: 'p-circle3' },
   { name: 'React', proficiency: 75, image: images.react, circleClass: 'p-circle4' },
   { name: 'Next.js', proficiency: 70, image: images.nextjs, circleClass: 'p-circle6' },
+  { name: 'Prisma', proficiency: 70, image: images.prisma, circleClass: 'p-circle14' },
   { name: 'Tailwind', proficiency: 90, image: images.tailwind, circleClass: 'p-circle7' },
   { name: 'Python', proficiency: 75, image: images.python, circleClass: 'p-circle8' },
   { name: 'FastAPI', proficiency: 65, image: images.fastapi, circleClass: 'p-circle12' },
   { name: 'MongoDB', proficiency: 58, image: images.mongodb, circleClass: 'p-circle13' },
   { name: 'Figma', proficiency: 90, image: images.figma, circleClass: 'p-circle9' },
   { name: 'Git', proficiency: 100, image: images.git, circleClass: 'p-circle10' },
+  { name: 'R. Native', proficiency: 65, image: images.react_native, circleClass: 'p-circle15' },
   { name: 'Firebase', proficiency: 55, image: images.firebase, circleClass: 'p-circle11' },
 ];
 

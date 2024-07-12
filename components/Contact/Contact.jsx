@@ -130,7 +130,7 @@ const Contact = () => {
               <LuPhoneCall/>
             </div>
             <div className="py-8">
-              <p><strong>Phone</strong></p>
+              <p className="contact-item"><strong>Phone</strong></p>
               <p>+88 019 50 422 568</p>
             </div>
           </div>
@@ -142,7 +142,7 @@ const Contact = () => {
             </div>
 
             <div className="py-8">
-              <p><strong>Email</strong></p>
+              <p className="contact-item"><strong>Email</strong></p>
               <p>develeven@outlook.com</p>
             </div>
           </div>
@@ -152,7 +152,7 @@ const Contact = () => {
               <IoLocationOutline/>
             </div>
             <div className="py-8">
-              <p><strong>Address</strong></p>
+              <p className="contact-item"><strong>Address</strong></p>
               <p>Rangpur, Bangladesh</p>
             </div>
           </div>

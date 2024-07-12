@@ -49,6 +49,12 @@
   scrollbar-color: var(--cyanmid) var(--bglight);
 }
 
+/* Text Select */
+.navbar, img, .skill, .contact-item, .service-card {
+  user-select: none;
+}
+
+
 /* Cursor Styles Start */
 .service-card {
   cursor: context-menu;
@@ -807,70 +813,82 @@ button.active {
   stroke-dashoffset: 427;
   stroke-linecap: round;
 }
-
+/* HTML */
 .p-circle1 {
   fill: rgba(229, 76, 33, 0.2);
   stroke: rgb(229, 76, 33, 0.7);
 }
-
+/* CSS */
 .p-circle2 {
   fill: rgba(33, 141, 229, 0.2);
   stroke: rgb(33, 141, 229, 0.7);
 }
-
+/* JavaScript */
 .p-circle3 {
   fill: rgba(247, 223, 30, 0.2);
   stroke: rgb(247, 223, 30, 0.7);
 }
-
+/* React */
 .p-circle4 {
   fill: rgba(128, 222, 234, 0.2);
   stroke: rgba(128, 222, 234, 0.9);
 }
-
-.p-circle5 {
+/* Laravel */
+/* .p-circle5 {
   fill: rgba(255, 45, 32, 0.2);
   stroke: rgba(255, 45, 32, 0.9);
-}
-
+} */
+/* Next.js */
 .p-circle6 {
   fill: rgba(255, 255, 255, 0.3);
   stroke: rgba(255, 255, 255, 0.9);
 }
-
+/* TailwindCSS */
 .p-circle7 {
   fill: rgba(1, 181, 213, 0.2);
   stroke: rgba(1, 181, 213, 0.9);
 }
-
+/* Python */
 .p-circle8 {
   fill: rgba(42, 121, 167, 0.2);
   stroke: rgba(42, 121, 167, 0.9);
 }
-
+/* Figma */
 .p-circle9 {
   fill: rgba(17, 208, 242, 0.2);
   stroke: rgba(17, 208, 242, 0.9);
 }
-
+/* Git */
 .p-circle10 {
   fill: rgba(243, 81, 29, 0.2);
   stroke: rgba(243, 81, 29, 0.9);
 }
-
+/* Firebase */
 .p-circle11 {
   fill: rgba(242, 145, 17, 0.2);
   stroke: rgba(255, 203, 43, 0.9);
 }
-
+/* FastAPI */
 .p-circle12 {
   fill: rgba(36, 211, 173, 0.2);
   stroke: rgba(36, 211, 173, 0.9);
 }
 
+/* MongoDB */
 .p-circle13 {
   fill: rgba(36, 211, 89, 0.2);
   stroke: rgba(36, 211, 89, 0.9);
+}
+/* Prisma */
+.p-circle14 {
+  fill: rgba(0, 189, 164, 0.2);
+  stroke: rgba(0, 189, 164, 0.9);
+}
+
+/* React Native */
+.p-circle15 {
+  fill: rgba(72, 125, 192, 0.2);
+  stroke: rgba(72, 125, 192, 0.9);
 }
 
 .p-circle101 {

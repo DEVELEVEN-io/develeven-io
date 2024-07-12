@@ -17,6 +17,9 @@ import nextjs from '../assets/icons/nextjs.png';
 import firebase from '../assets/icons/firebase.png';
 import fastapi from '../assets/icons/fastapi.png';
 import mongodb from '../assets/icons/mongodb.png';
+import prisma from '../assets/icons/prisma.png';
+import react_native from '../assets/icons/react_native.png';
+
 import logo_outlined from '../assets/icons/logo_outlined.svg';
 // import cpp from '../assets/icons/cpp.png';
 // import flutter from '../assets/icons/flutter.png';
@@ -45,6 +48,8 @@ const data = {
   firebase,
   fastapi, 
   mongodb,
+  prisma,
+  react_native,
   logo_outlined
 };
 
