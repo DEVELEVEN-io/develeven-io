@@ -123,7 +123,7 @@ const Contact = () => {
           />
         </form>
       
-        <div className="contact-info bg-bgdark p-4 rounded-lg ml-4 my-auto w-full text-white">
+        <div className="contact-info bg-bgdark md:px-10 sm:px-4 py-4 rounded-lg ml-4 my-auto w-full text-white">
 
           <div className="contactInfoHolder flex flex-row items-center my-4">
             <div className="contactIcon text-3xl bgGradientTop w-16 h-16 rounded-full flex justify-center items-center mr-4">

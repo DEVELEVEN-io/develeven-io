@@ -50,10 +50,19 @@
 }
 
 /* Text Select */
-.navbar, img, .skill, .contact-item, .service-card {
+.navbar, img, .skill, .contact-item, .service-card, h2, h3, h4, h5, h6, a, span, button, input, select, textarea {
   user-select: none;
 }
 
+::-moz-selection {
+  color: white;
+  background: var(--cyanmid2);
+}
+
+::selection {
+  color: white;
+  background: var(--cyanmid2);
+}
 
 /* Cursor Styles Start */
 .service-card {
@@ -1010,6 +1019,10 @@ button.active {
 
   .navbar.scrolled {
     /* background: var(--bglight); */
+  }
+  .contact-info {
+    margin-top: 2rem !important;
+    margin-left: 0 !important;
   }
 }
 
