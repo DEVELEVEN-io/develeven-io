@@ -1,6 +1,7 @@
 "use client";
-import React, { useEffect, useState } from 'react';
-import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import LogoSvg from "../../constants/svgs/logo";
 import { images } from "../../constants";
 import Image from "next/image";
 
@@ -28,7 +29,7 @@ const Header = () => {
   return (
     <header className="header container flex flex-col justify-between mx-auto mt-32 w-full">
 
-      <div className="headerItems rows flex flex-row mb-16">
+      <div className="headerItems rows flex flex-row mb-16 justify-center">
 
         <div className="headerInfo">
 
@@ -45,20 +46,21 @@ const Header = () => {
                 Get in Touch
               </button>
               <li className='text-3xl text-cyanmid rounded-full my-auto hover:text-4xl hover:text-ff transition-all'>
-                <a href="https://facebook.com/" target='_blank'><FaFacebook></FaFacebook></a>
+                <a href="https://github.com/DEVELEVEN-io/" target='_blank'><FaGithub></FaGithub></a>
               </li>
               <li className='text-3xl text-cyanmid rounded-full my-auto hover:text-4xl hover:text-ff transition-all'>
                 <a href="https://linkedin.com/" target='_blank'><FaLinkedin></FaLinkedin></a>
               </li>
               <li className='text-3xl text-cyanmid rounded-full my-auto hover:text-4xl hover:text-ff transition-all'>
-                <a href="https://github.com/DEVELEVEN-io/" target='_blank'><FaGithub></FaGithub></a>
+                <a href="https://x.com/" target='_blank'><FaXTwitter></FaXTwitter></a>
               </li>
             </ul>
         </div>
+
         </div>
 
         <div className="logoAnim">
-          <Image src={images.logo_outlined} alt="DevEleven Logo"/>
+          <LogoSvg width={200} height={200}/>
         </div>
 
       </div>
