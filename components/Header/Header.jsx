@@ -60,7 +60,8 @@ const Header = () => {
         </div>
 
         <div className="logoAnim">
-          <LogoSvg width={200} height={200}/>
+          <Image src={images.logo_3d_md} width={200} height={200} alt="Logo 3D"/>
+          {/* <LogoSvg width={200} height={200}/> */}
         </div>
 
       </div>

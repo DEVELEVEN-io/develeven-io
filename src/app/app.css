@@ -238,14 +238,15 @@ body {
 }
 
 .logoAnim {
-  width: 300px;
-  height: 300px;
+  /* width: 300px;
+  height: 300px; */
   max-width: 100%;
   max-height: 100%;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+  top: 120px;
   right: -5%;
   position: relative;
-  animation: spin 24s linear infinite;
+  animation: spin 12s linear infinite;
 }
 
 /* .logoAnim svg  {
@@ -259,11 +260,11 @@ body {
 
 @keyframes spin {
   0%, 100% {
-    transform: rotate(-40deg) translate(5px, 5px) scale(.9);
+    transform: rotate(10deg) translate(5px, 5px) scale(1.8);
     opacity: 0.5;
   }
   50% {
-    transform: rotate(-30deg) translate(20px, 20px) scale(1.1);
+    transform: rotate(24deg) translate(10px, 10px) scale(2.0);
     opacity: 0.7;
   }
 }

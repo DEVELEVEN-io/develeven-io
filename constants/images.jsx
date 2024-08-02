@@ -21,6 +21,7 @@ import prisma from '../assets/icons/prisma.png';
 import react_native from '../assets/icons/react_native.png';
 
 import logo_outlined from '../assets/icons/logo_outlined.svg';
+import logo_3d_md from '../assets/logo_3d_md.png';
 // import cpp from '../assets/icons/cpp.png';
 // import flutter from '../assets/icons/flutter.png';
 // import graphql from '../assets/icons/graphql.png';
@@ -50,7 +51,8 @@ const data = {
   mongodb,
   prisma,
   react_native,
-  logo_outlined
+  logo_outlined,
+  logo_3d_md
 };
 
 export default data;
