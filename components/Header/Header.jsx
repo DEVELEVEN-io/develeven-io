@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-import LogoSvg from "../../constants/svgs/logo";
+// import LogoSvg from "../../constants/svgs/logo";
 import { images } from "../../constants";
 import Image from "next/image";
 
