@@ -238,15 +238,15 @@ body {
 }
 
 .logoAnim {
-  /* width: 300px;
-  height: 300px; */
+  min-width: 300px;
+  min-height: 300px;
   max-width: 100%;
   max-height: 100%;
   /* border-radius: 50%; */
-  top: 120px;
+  top: 20px;
   right: -5%;
   position: relative;
-  animation: spin 12s linear infinite;
+  /* animation: spin 12s linear infinite; */
 }
 
 /* .logoAnim svg  {
