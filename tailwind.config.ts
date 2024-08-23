@@ -22,6 +22,7 @@ module.exports = {
       lightgray: "#6c7a7a",
       ff: "#FFFFFF",
       zz: "#000000",
+      tran: "#00000000",
     },
     backgroundImage: (theme) => ({
       "gradient-to-r": "linear-gradient(to right, var(--tw-gradient-stops))",

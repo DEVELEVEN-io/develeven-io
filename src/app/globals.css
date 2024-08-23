@@ -60,7 +60,7 @@
     @apply w-full;
   }
 
-  @media (max-width: 396px) { 
+  @media (max-width: 406px) { 
     .hireBtn {
       padding: 8px 0 !important;
       font-size: 0.9rem !important;
