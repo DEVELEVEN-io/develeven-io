@@ -1,4 +1,4 @@
-import { images } from "../../constants";
+import { images } from "@/../data";
 import Image from "next/image";
 
 const Footer = () => {

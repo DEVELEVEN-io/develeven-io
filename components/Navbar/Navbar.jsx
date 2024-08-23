@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { images } from "../../constants";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { images } from "../../data";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

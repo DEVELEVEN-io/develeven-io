@@ -2,8 +2,8 @@
 import { useEffect, useState } from 'react';
 import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 // import LogoSvg from "../../constants/svgs/logo";
-import { images } from "../../constants";
 import Image from "next/image";
+import { images } from "../../data";
 
 const Header = () => {
 
@@ -60,7 +60,7 @@ const Header = () => {
         </div>
 
         <div className="logoAnim">
-          <Image src={images.logo_3d_md} width={300} height={300} alt="Logo 3D"/>
+          <Image src={images.logo_3d_md} className="object-cover w-[350px] h-[350px]" alt="Logo 3D"/>
           {/* <LogoSvg width={200} height={200}/> */}
         </div>
 

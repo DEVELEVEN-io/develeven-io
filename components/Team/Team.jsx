@@ -1,7 +1,6 @@
-import { images } from "../../constants";
 import Image from 'next/image';
-import { FaLinkedin, FaGithub, FaYoutube, FaGlobe, FaFacebook, FaTelegram } from 'react-icons/fa';
-import React from "react";
+import { FaFacebook, FaGithub, FaGlobe, FaLinkedin, FaTelegram, FaYoutube } from 'react-icons/fa';
+import { images } from "../../data";
 
 const teamMembers = [
   {
