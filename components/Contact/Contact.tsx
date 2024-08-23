@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
-import { LuPhoneCall } from "react-icons/lu";
 import { IoLocationOutline, IoMailOutline } from "react-icons/io5";
+import { LuPhoneCall } from "react-icons/lu";
 
 const Contact = () => {
   useEffect(() => {
@@ -47,7 +47,7 @@ const Contact = () => {
         selectedDiv.addEventListener("click", function (e) {
           e.stopPropagation();
           closeAllSelect(this);
-          this.nextSibling.classList.toggle("select-hide");
+          (this.nextSibling as HTMLElement).classList.toggle("select-hide");
           this.classList.toggle("select-arrow-active");
         });
       });

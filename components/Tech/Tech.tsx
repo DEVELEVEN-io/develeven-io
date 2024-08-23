@@ -46,11 +46,11 @@ const Tech = () => {
     const progressBars = document.querySelectorAll('.sk-progress svg circle');
 
     skCounters.forEach((skCounter, index) => {
-      const cvalue = Number(skCounter.dataset.target);
+      const cvalue = Number((skCounter as HTMLElement).dataset.target);
       let strokeValue = 427 - 427 * (cvalue / 100);
 
-      progressBars[index].style.animation = 'progress 2s ease-in-out forwards';
-      progressBars[index].style.setProperty('--target', strokeValue);
+      (progressBars[index] as HTMLElement).style.animation = 'progress 2s ease-in-out forwards';
+      (progressBars[index] as HTMLElement).style.setProperty('--target', strokeValue.toString());
 
       setTimeout(() => {
         updateCount(skCounter, cvalue);

@@ -20,6 +20,7 @@ module.exports = {
       bgdark: "#071115",
       bglight: "#0B1B22",
       txtdark: "#DCF0F1",
+      lightgray: "#6c7a7a",
       ff: "#FFFFFF",
       zz: "#000000",
     },
