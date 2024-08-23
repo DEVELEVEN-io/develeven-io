@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import Image from 'next/image';
 import { useState } from 'react';
-import { images } from '../../data/';
+import { images } from "../../data";
 
 const Work = () => {
   const [filter, setFilter] = useState('all');

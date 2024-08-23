@@ -1,7 +1,7 @@
-import { Header, Work, Services, Team, Tech, Navbar, Contact, Footer } from '../../components';
+import { Contact, Footer, Header, Navbar, Services, Team, Tech, Work } from '../layouts';
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar />
       <Header />
       <Work />
@@ -10,6 +10,6 @@ export default function Home() {
       <Tech />
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 }

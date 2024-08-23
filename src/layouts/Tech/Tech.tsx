@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { images } from '../../data';
+import { images } from "../../data";
 
 const skillsData = [
   { name: 'HTML5', proficiency: 98, image: images.html, circleClass: 'p-circle1' },

@@ -1,5 +1,5 @@
-import { images } from "@/../../data/";
 import Image from "next/image";
+import { images } from "../../data";
 
 const Footer = () => {
   return (
