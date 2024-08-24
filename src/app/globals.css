@@ -75,12 +75,26 @@
     .skills-wrap {
       gap: 1rem;
     }
+
+    .filter-btns button {
+      font-size: 0.7rem !important;
+      padding-left: 0.7rem !important;
+      padding-right: 0.7rem !important;
+    }
     
   }
 
   @media (max-width: 424px) {
     .skills-wrap {
       gap: 1rem;
+    }
+  }
+
+  @media (max-width: 458px) {
+    .filter-btns button {
+      font-size: 0.7rem !important;
+      padding-left: 0.9rem;
+      padding-right: 0.9rem;
     }
   }
 
