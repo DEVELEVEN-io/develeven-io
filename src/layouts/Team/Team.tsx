@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { FaFacebook, FaGithub, FaGlobe, FaLinkedin, FaTelegram, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaGlobe, FaLinkedin, FaTelegram, FaYoutube, FaTwitter } from 'react-icons/fa';
 import { images } from "../../data";
 
 const teamMembers = [
@@ -7,7 +7,7 @@ const teamMembers = [
     name: "Abid Al Wassie",
     image: images.portrait_abid_md,
     title: "Web Developer",
-    description: "Abid Al Wassie is a Senior Developer at DevEleven-io. He is a Full-Stack Developer. He is the creator of oneManDev.",
+    description: "Senior Full-Stack Developer at DevEleven-io. Creator of oneManDev.",
     links: {
       website: "https://abidalwassie.me",
       github: "https://github.com/AbidAlWassie",
@@ -19,11 +19,11 @@ const teamMembers = [
     name: "Ragib Al Asad",
     image: images.portrait_ragib_md,
     title: "Web Developer",
-    description: "DevEleven Co-Founder. Senior Backend Developer at DevEleven-io with terrible frontend skills.",
+    description: "Founder of DevEleven. Senior Backend Developer at DevEleven-io with terrible frontend skills.",
     links: {
       website: "https://ragibalasad.me",
       github: "https://github.com/ragibalasad",
-      facebook: "https://facebook.com/ragibalasad",
+      twitter: "https://twitter.com/ragibalasad",
       linkedin: "https://www.linkedin.com/in/ragibalasad"
     }
   },
@@ -31,7 +31,7 @@ const teamMembers = [
     name: "Shihab Shahriar Rashu",
     image: images.portrait_rashu_md,
     title: "Web Developer",
-    description: "Shihab Shahriar Rashu is a web developer at DevEleven-io. He's an integral part of the development team, with expertise in JavaScript and Python.",
+    description: "Web developer at DevEleven-io and an integral part of the development team, with expertise in JavaScript and Python.",
     links: {
       facebook: "https://facebook.com/mdshihabshahriar.rashu",
       github: "https://github.com/muhammadshihab",
@@ -42,7 +42,7 @@ const teamMembers = [
     name: "Raiyan Takrim",
     image: images.portrait_raiyan_md,
     title: "Web Developer",
-    description: "Raiyan Takrim  is a frontend developer at DevEleven-io. He possesses expertise in HTML, CSS, JS, Python, React, etc.",
+    description: "Frontend developer at DevEleven-io. Possesses expertise in HTML, CSS, JS, Python, React, etc.",
     links: {
       facebook: "https://facebook.com/raiyan.takrim3",
       github: "https://github.com/raiyan-takrim",
@@ -58,6 +58,7 @@ const socialMedia = [
   { name: 'linkedin', icon: FaLinkedin },
   { name: 'facebook', icon: FaFacebook },
   { name: 'telegram', icon: FaTelegram },
+  { name: 'twitter', icon: FaTwitter },
 ];
 
 const Team = () => {
